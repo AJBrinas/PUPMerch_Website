@@ -22,5 +22,4 @@ const createNav = () => {
         </ul>
     `;
 }
-
 createNav();

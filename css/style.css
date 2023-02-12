@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.intro-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
+  height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
+  object-fit: cover;
+  z-index:-1;
+  /* filter: brightness(50%); */ /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+/* .intro-slideshow img:first-child {
+  display: block;
+  opacity: 1;
+} */
+.intro .intro-header {
+  border-radius: 0.5rem;
+  padding: 2rem 2.5rem;
+  background-color: rgba(0,0,0,0.5);
+}
+.intro h1 {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+.intro p {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 700px) {
+  html { font-size: 12px; }
+  .intro-header { padding: 1.5rem 2rem; }
+  .intro h1 { font-size: 2.5rem; }
+  .intro p { font-size: 1.25rem; }
+}
