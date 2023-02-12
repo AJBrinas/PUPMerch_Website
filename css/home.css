@@ -36,6 +36,7 @@
     font-weight: 500;
     margin-bottom: 40px;
     text-transform: capitalize;
+    color: #000000;
 }
 .product-container{
     padding: 0 10vw;
@@ -53,6 +54,7 @@
     width: 250px;
     height: 450px;
     margin-right: 40px;
+    color:black;
 }
 
 .product-image{
@@ -73,7 +75,7 @@
     background: #fff;
     padding: 5px;
     border-radius: 5px;
-    color: #ff7d7d;
+    color: #800000;
     right: 10px;
     top: 10px;
     text-transform: capitalize;
@@ -101,7 +103,7 @@
 }
 
 .card-btn:hover{
-    background: #efefef;
+    background: #e6e4e4;
 }
 
 .product-info{
@@ -162,7 +164,7 @@
     flex: 0 0 auto;
     width: 250px;
     height: 450px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .product-image{
@@ -183,7 +185,7 @@
     background: #fff;
     padding: 5px;
     border-radius: 5px;
-    color: #ff7d7d;
+    color: #800000;
     right: 10px;
     top: 10px;
     text-transform: capitalize;
@@ -246,14 +248,14 @@
 }
 .pre-btn, .nxt-btn{
     border: none;
-    width: 10vw;
+    width: 5vw;
     height: 100%;
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: none;
     cursor: pointer;
     z-index: 8;
 }
@@ -268,7 +270,7 @@
 }
 
 .pre-btn img, .nxt-btn img{
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 .pre-btn:hover img, .nxt-btn:hover img{
