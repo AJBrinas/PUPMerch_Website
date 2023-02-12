@@ -15,13 +15,14 @@
             <a class="search-btn"  href="#">
             <i class="fas fa-search"></i>
         </a>
+        </div>
      </div>
         <!--user cart-->
             <div class="nav-items">
             <a href="#"><img src="img/user.png" alt=""></a>
             <a href="#"><img src="img/cart.png" alt=""></a>
          </div>
-            </div>
+
             <ul class="links-container">
                 <li class="link-item"><a href="#" class="link">Home</a></li>
                 <li class="link-item"><a href="#" class="link">Products</a></li>
@@ -55,7 +56,7 @@
                         <div class="product-image">
                             <span class="discount-tag">50% off</span>
                             <img src="img/card1.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to whislist</button>
+                            <button class="card-btn">add to cart</button>
                         </div>
                         <div class="product-info">
                             <h2 class="product-brand">brand</h2>
@@ -72,7 +73,7 @@
                         <div class="product-image">
                             <span class="discount-tag">50% off</span>
                             <img src="img/card1.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to whislist</button>
+                            <button class="card-btn">add to cart</button>
                         </div>
                         <div class="product-info">
                             <h2 class="product-brand">brand</h2>
@@ -86,20 +87,42 @@
             <section class="collection-container">
                 <a href="#" class="collection">
                     <img src="img/women-collection.png" alt="">
-                    <p class="collection-title">women <br> apparels</p>
+                    <p class="collection-title">Iskolar<br> shirts</p>
                 </a>
                 <a href="#" class="collection">
                     <img src="img/men-collection.png" alt="">
-                    <p class="collection-title">men <br> apparels</p>
+                    <p class="collection-title">Iskolar <br> Shirts</p>
                 </a>
                 <a href="#" class="collection">
                     <img src="img/accessories-collection.png" alt="">
-                    <p class="collection-title">accessories</p>
+                    <p class="collection-title">Accessories</p>
                 </a>
             </section>
 
             <script src="js/nav.js"></script>
             <script src="js/home.js"></script>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-content">
+                <img src="img/light-logo.png" class="logo" alt="">
+
+            <p class="footer-title">about company</p>
+            <p class="info">support emails - help@clothing.com, customersupport@clothing.com</p>
+            <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+            <div class="footer-social-container">
+                <div>
+                    <a href="#" class="social-link">terms & services</a>
+                    <a href="#" class="social-link">privacy page</a>
+                </div>
+                <div>
+                    <a href="#" class="social-link">instagram</a>
+                    <a href="#" class="social-link">facebook</a>
+                    <a href="#" class="social-link">twitter</a>
+                </div>
+            </div>
+            <p class="footer-credit">Clothing, Best apparels online store</p>
+        </footer>
 
 </body>
 </html>
