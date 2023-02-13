@@ -64,9 +64,6 @@
                     <div class="product-card">
                         <div class="product-image">
                             <span class="discount-tag">50% off</span>
-<<<<<<< HEAD
-                            <img src="img/card1.png" class="product-thumb" alt="">
-=======
                             <img src="img/card2.png" class="product-thumb" alt="">
                             <button class="card-btn">add to cart</button>
                         </div>
@@ -172,7 +169,6 @@
                         <div class="product-image">
                             <span class="discount-tag">50% off</span>
                             <img src="img/card10.png" class="product-thumb" alt="">
->>>>>>> 94b0ee00ebe3675ae7c8205c9c366e48b650f9d8
                             <button class="card-btn">add to cart</button>
                         </div>
                         <div class="product-info">
@@ -202,28 +198,6 @@
             <script src="js/nav.js"></script>
             <script src="js/home.js"></script>
 
-<<<<<<< HEAD
-        <!--footer-->
-        <footer>
-            <div class="footer-content">
-                <img src="img/light-logo.png" class="logo" alt="">
-
-            <p class="footer-title">about company</p>
-            <p class="info">support emails - help@clothing.com, customersupport@clothing.com</p>
-            <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
-            <div class="footer-social-container">
-                <div>
-                    <a href="#" class="social-link">terms & services</a>
-                    <a href="#" class="social-link">privacy page</a>
-                </div>
-                <div>
-                    <a href="#" class="social-link">instagram</a>
-                    <a href="#" class="social-link">facebook</a>
-                    <a href="#" class="social-link">twitter</a>
-                </div>
-            </div>
-            <p class="footer-credit">Clothing, Best apparels online store</p>
-=======
     
      <!--footer-->
         <footer>
@@ -243,7 +217,6 @@
                         </div>
                 </div>
             </div>
->>>>>>> 94b0ee00ebe3675ae7c8205c9c366e48b650f9d8
         </footer>
 
 </body>
