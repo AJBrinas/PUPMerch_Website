@@ -1,11 +1,11 @@
-<html>
+<!-- <html>
 <head>
     <title>PUPQC MERCH</title>
     <link rel="stylesheet" href="css/home.css">
     </head>
 
     <body>
-        <!--Heading-->
+        Heading
         <nav class="navbar">
             <div class="nav">
                 <img src="img/logo.png" class="logo" alt="">
@@ -25,7 +25,10 @@
                 <li class="link-item"><a href="#" class="link">Size Chart</a></li>
                 <li class="link-item"><a href="#" class="link">FAQs</a></li>
             </ul>
-            </nav>
+            </nav> -->
+    <?php 
+    include 'header.php';
+    ?>
         <!--Heading-->    
         <!--About Us-->
         <link rel="stylesheet" href="aboutus.css">

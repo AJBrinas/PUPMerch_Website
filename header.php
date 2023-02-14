@@ -25,11 +25,11 @@
     <div class="links-container">
         <ul>
             <li class="link-item"><a href="#" class="link">Home</a></li>
-            <li class="link-item"><a href="product.html" class="link">Products</a></li>
+            <li class="link-item"><a href="#" class="link">Products</a></li>
             <li class="link-item"><a href="#" class="link">About Us</a></li>
             <li class="link-item"><a href="#" class="link">Size Chart</a></li>
             <li class="link-item"><a href="#" class="link">FAQs</a></li>
-            <li><a href="product.html">fuck</a></li>
+           
         </ul>
     </div>
     </nav>
