@@ -20,9 +20,7 @@
             <p class="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           
             <span class="product-price">$99</span>
-            <span class="product-actual-price">$200</span>
-            <span class="product-discount">( 50% off )</span>
-    
+
             <p class="product-sub-heading">select size</p>
     
             <input type="radio" name="size" value="s" checked hidden id="s-size">
@@ -49,91 +47,84 @@
         <div class="product-container">
             <div class="product-card">
                 <div class="product-image">
-                    <span class="discount-tag">50% off</span>
                     <img src="img/shirt1.jpg" class="product-thumb" alt="">
                     <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">a short line about the cloth..</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$20</span>
                 </div>
             </div>
     <!--product2 container-->
             <div class="product-card">
                 <div class="product-image">
-                    <span class="discount-tag">50% off</span>
                     <img src="img/shirt2.jpg" class="product-thumb" alt="">
                     <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">a short line about the cloth..</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$20</span>
                 </div>
             </div>
         <!--product3 container-->
             <div class="product-card">
                 <div class="product-image">
-                    <span class="discount-tag">50% off</span>
                     <img src="img/shirt3.jpg" class="product-thumb" alt="">
                     <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">a short line about the cloth..</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$20</span>
                 </div>
             </div>
         <!--product4 container-->
             <div class="product-card">
                 <div class="product-image">
-                    <span class="discount-tag">50% off</span>
                     <img src="img/shirt4.jpg" class="product-thumb" alt="">
                     <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">a short line about the cloth..</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$20</span>
                 </div>
             </div>
         <!--product5-->
             <div class="product-card">
                 <div class="product-image">
-                    <span class="discount-tag">50% off</span>
                     <img src="img/shirt5.jpg" class="product-thumb" alt="">
                     <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">a short line about the cloth..</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$20</span>
                 </div>
             </div>
         <!--product6-->
             <div class="product-card">
                 <div class="product-image">
-                    <span class="discount-tag">50% off</span>
+        
                     <img src="img/shirt6.jpg" class="product-thumb" alt="">
                     <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">a short line about the cloth..</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$20</span>
                 </div>
             </div>
      </div>
     </section>
     
-   
-<footer></footer>
-
+<?php include 'footer.php';
+?>
         <script src="js/nav.js"></script>
-        <script src="js/footer.js"></script>
         <script src="js/home.js"></script>
-        <script src="js/product.js"></script>
+        <script src="js/products.js"></script>
 
 </body>
 </html>

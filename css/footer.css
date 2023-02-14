@@ -22,7 +22,7 @@ footer{
     justify-content: space-between;
 }
 
-.category{
+/* .category{
     width: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,7 +42,7 @@ footer{
     text-decoration: none;
     text-transform: capitalize;
      color: rgba(255, 255, 255, 0.75);
-}
+} */
 
 .footer-link:hover{
     color: #fff;
