@@ -2,7 +2,7 @@
  <?php include 'header.php';
             ?>
 
-        <link rel="stylesheet" href="sizechart.css">
+        <link rel="stylesheet" href="css/sizechart.css">
         <section class="sizechart">
                 <h2 class="sizechart-category">Shirt Size Chart</h2>
 
