@@ -1,0 +1,292 @@
+@import 'nav.css';
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+.faqs{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.faqs-h2{
+    padding: 0 10vw;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q1{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q1A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q1-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Q2{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q2A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q2-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q3{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q3A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q3-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q4{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q4A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q4-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q5{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q5A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q5-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q6{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q6A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q6-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q7{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q7A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q7-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q8{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q8A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q8-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q9{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q9A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q9-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Q10{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana;
+}
+.Q10A{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.Q10-Image{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
