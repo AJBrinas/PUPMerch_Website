@@ -1,31 +1,4 @@
-<!-- <html>
-<head>
-    <title>PUPQC MERCH</title>
-    <link rel="stylesheet" href="css/home.css">
-    </head>
 
-    <body>
-        Heading
-        <nav class="navbar">
-            <div class="nav">
-                <img src="img/logo.png" class="logo" alt="">
-                <div class="nav-items">
-                    <div class="search">
-                        <input type="text" class="search-box" placeholder="search brand, product">
-                        <button class="search-btn">search</button>
-                    </div>
-                    <a href="#"><img src="img/user.png" alt=""></a>
-                    <a href="#"><img src="img/cart.png" alt=""></a>
-                </div>
-            </div>
-            <ul class="links-container">
-                <li class="link-item"><a href="#" class="link">Home</a></li>
-                <li class="link-item"><a href="#" class="link">Products</a></li>
-                <li class="link-item"><a href="#" class="link">About Us</a></li>
-                <li class="link-item"><a href="#" class="link">Size Chart</a></li>
-                <li class="link-item"><a href="#" class="link">FAQs</a></li>
-            </ul>
-            </nav> -->
     <?php 
     include 'header.php';
     ?>
@@ -50,13 +23,13 @@
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="mejela.png">
-                    <img src="img/mejela.png" alt="meje" width="600" height="400">
+                    <img src="img/mejela.jpg" alt="meje" width="600" height="400">
                     </a>
                         <div class="desc">Mejela, Gojol</div>
                 </div>
                 <div class="gallery">
-                    <a target="_blank" href="ian.png">
-                    <img src="img/ian.png" alt="ian" width="600" height="400">
+                    <a target="_blank" href="ian.jpg">
+                    <img src="img/ian.jpg" alt="ian" width="600" height="400">
                     </a>
                         <div class="desc">Manabat, Charles Adrianne</div>
                 </div>
