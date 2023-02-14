@@ -59,19 +59,6 @@
     font-size: 30px;
 }
 
-.product-actual-price{
-    font-size: 30px;
-    opacity: 0.5;
-    text-decoration: line-through;
-    margin: 0 20px;
-    font-weight: 300;
-}
-
-.product-discount{
-    color: #800000;
-    font-size: 20px;
-}
-
 .product-sub-heading{
     font-size: 30px;
     text-transform: uppercase;

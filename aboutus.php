@@ -17,7 +17,7 @@
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="jannae.png">
-                    <img src="img/jannae.png" alt="Janna" width="400" height="400">
+                    <img src="img/janna.png" alt="Janna" width="400" height="400">
                     </a>
                         <div class="desc">Enriquez, Janna Manuela</div>
                 </div>
