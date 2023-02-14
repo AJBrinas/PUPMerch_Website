@@ -11,7 +11,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">
+            <li><a href="product.php">
                 <i class="fa fa-home"></i>
                 <span class="nav-item">Dashboard</span>
             </a></li>

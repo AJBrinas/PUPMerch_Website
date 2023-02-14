@@ -1,0 +1,78 @@
+@import 'nav.css';
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+.aboutus{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.aboutus-h2{
+    padding: 0 10vw;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: Verdana;
+}
+.aboutus-p{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: Verdana;
+}
+.ourteam-h2{
+    padding: 0 10vw;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: Verdana;
+}
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 500px;
+    margin-left: 150px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+ 
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}
