@@ -9,7 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: azure;
+    background-color: rgb(225, 225, 225);
 }
 nav{
     position: absolute;
@@ -17,7 +17,7 @@ nav{
     bottom: 0;
     height: 100%;
     left: 0;
-    background: #fff;
+    background: #dc5e5e;
     width: 90px;
     overflow: hidden;
     transition: width 0.2s linear;
