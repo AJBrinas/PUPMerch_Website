@@ -14,11 +14,11 @@ const createNav = () => {
             </div>
         </div>
         <ul class="links-container">
-            <li class="link-item"><a href="#" class="link">home</a></li>
-            <li class="link-item"><a href="product.html" class="link">Products</a></li>
-            <li class="link-item"><a href="#" class="link">About Us</a></li>
-            <li class="link-item"><a href="#" class="link">Size Chart</a></li>
-            <li class="link-item"><a href="#" class="link">FAQs</a></li>
+            <li class="link-item"><a href="home.php" class="link">home</a></li>
+            <li class="link-item"><a href="product.php" class="link">Products</a></li>
+            <li class="link-item"><a href="aboutus.php" class="link">About Us</a></li>
+            <li class="link-item"><a href="sizechart.php" class="link">Size Chart</a></li>
+            <li class="link-item"><a href="faqs.php" class="link">FAQs</a></li>
         </ul>
     `;
 }
