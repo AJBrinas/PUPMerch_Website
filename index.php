@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 <head>
     <title>PUPQC MERCH</title>
     <link rel="stylesheet" href="css/home.css">
@@ -7,7 +7,7 @@
     <nav class="navbar">
         <div class="nav">
             <img src="img/logo.png" class="logo" alt="">
-            <!--search-->
+            search
             <link rel="stylesheet" href="css/nav.css">
             <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
             <div class="search">
@@ -17,7 +17,7 @@
                 </a>
             </div>
         </div>
-    <!--user cart & navigation bar-->
+    user cart & navigation bar
     <div class="nav-items">
         <a href="admin/admin.html"><img src="img/user.png" alt=""></a>
         <a href="#"><img src="img/cart.png" alt=""></a>
@@ -32,8 +32,12 @@
             <li><a href="product.html">fuck</a></li>
         </ul>
     </div>
-    </nav>
-<!---Automatic Slideshow-->
+    </nav>-->
+
+<?php 
+    include 'header.php';
+?>
+<!-- -Automatic Slideshow -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/slideshow.js" defer></script>
         <header class="intro">
@@ -43,7 +47,8 @@
         <img src="img/banner3.png" class="slideshow-img">
         <img src="img/banner4.png" class="slideshow-img">
             </div>
-        </header>
+        </header> -->
+
 <!--product best selling-->
         <section class="product">
             <h2 class="product-category">best selling</h2>

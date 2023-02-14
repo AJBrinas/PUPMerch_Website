@@ -9,24 +9,25 @@
  
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="product.php">
-                <i class="fa fa-home"></i>
-                <span class="nav-item">Dashboard</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa fa-briefcase"></i>
-                <span class="nav-item">Product</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa fa-wallet"></i>
-                <span class="nav-item">Wallet</span>
-            </a></li>
-            <li><a href="#" class="logout">
-                <i class="fa-regular fa-square-caret-left"></i>
-                <span class="nav-item">Log Out</span>
-            </a></li>
-        </ul>
-    </nav>
-</body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="product.php">
+                    <i class="fa fa-home"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="nav-item">Product</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa fa-wallet"></i>
+                    <span class="nav-item">Wallet</span>
+                </a></li>
+                <li><a href="#" class="logout">
+                    <i class="fa-regular fa-square-caret-left"></i>
+                    <span class="nav-item">Log Out</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>

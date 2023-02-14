@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 <head>
     <title>PUPQC MERCH</title>
     </head>
@@ -23,7 +23,10 @@
                 <li class="link-item"><a href="#" class="link">Size Chart</a></li>
                 <li class="link-item"><a href="#" class="link">FAQs</a></li>
             </ul>
-            </nav>
+            </nav> -->
+ <?php 
+    include 'header.php';
+?>
         <link rel="stylesheet" href="sizechart.css">
         <section class="sizechart">
                 <h2 class="sizechart-category">Shirt Size Chart</h2>
