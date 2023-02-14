@@ -1,31 +1,9 @@
-<html>
-<head>
-    <title>PUPQC MERCH</title>
-    <link rel="stylesheet" href="css/home.css">
-    </head>
 
-    <body>
-        <!--Heading-->
-        <nav class="navbar">
-            <div class="nav">
-                <img src="img/logo.png" class="logo" alt="">
-                <div class="nav-items">
-                    <div class="search">
-                        <input type="text" class="search-box" placeholder="search brand, product">
-                        <button class="search-btn">search</button>
-                    </div>
-                    <a href="#"><img src="img/user.png" alt=""></a>
-                    <a href="#"><img src="img/cart.png" alt=""></a>
-                </div>
-            </div>
-            <ul class="links-container">
-                <li class="link-item"><a href="#" class="link">Home</a></li>
-                <li class="link-item"><a href="#" class="link">Products</a></li>
-                <li class="link-item"><a href="#" class="link">About Us</a></li>
-                <li class="link-item"><a href="#" class="link">Size Chart</a></li>
-                <li class="link-item"><a href="#" class="link">FAQs</a></li>
-            </ul>
-            </nav>
+<?php 
+    include 'header.php';
+?>
+
+
         <!--Heading-->    
         <link rel="stylesheet" href="faqs.css">
         <<section class="faqs">
@@ -111,3 +89,6 @@
                 <img src="img/Q10.png" alt="Q10" width="1300" height="1300">
                 </a>
             </div>
+
+            <script src="js/nav.js"></script>
+                <script src="js/home.js"></script>

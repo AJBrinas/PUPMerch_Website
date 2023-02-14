@@ -11,37 +11,37 @@
                 <h2 class="ourteam-h2">OUR TEAM</h2>
                 <div class="gallery">
                     <a target="_blank" href="andrew.png">
-                    <img src="img/andrew.png" alt="andrew" width="600" height="400">
+                    <img src="img/andrew.png" alt="andrew" width="400" height="400">
                     </a>
                         <div class="desc">Brinas, Andrew</div>
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="jannae.png">
-                    <img src="img/jannae.png" alt="Janna" width="600" height="400">
+                    <img src="img/jannae.png" alt="Janna" width="400" height="400">
                     </a>
                         <div class="desc">Enriquez, Janna Manuela</div>
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="mejela.png">
-                    <img src="img/mejela.jpg" alt="meje" width="600" height="400">
+                    <img src="img/mejela.jpg" alt="meje" width="400" height="400">
                     </a>
                         <div class="desc">Mejela, Gojol</div>
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="ian.jpg">
-                    <img src="img/ian.jpg" alt="ian" width="600" height="400">
+                    <img src="img/ian.jpg" alt="ian" width="400" height="400">
                     </a>
                         <div class="desc">Manabat, Charles Adrianne</div>
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="jane.png">
-                    <img src="img/jane.png" alt="jane" width="600" height="400">
+                    <img src="img/jane.png" alt="jane" width="400" height="400">
                     </a>
                         <div class="desc">Pajela, Jane Samer</div>
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="royettev.png">
-                    <img src="img/royettev.png" alt="royette" width="600" height="400">
+                    <img src="img/royettev.png" alt="royette" width="400" height="400">
                     </a>
                         <div class="desc">Vergara, Royette</div>
                 </div>
