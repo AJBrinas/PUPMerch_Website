@@ -72,3 +72,6 @@
                     </a>
                         <div class="desc">Vergara, Royette</div>
                 </div>
+                
+                <script src="js/nav.js"></script>
+                <script src="js/home.js"></script>
