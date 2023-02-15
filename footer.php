@@ -1,8 +1,4 @@
-<html>
-<head>
-<link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
+
 <footer>
         <div class="footer-content">
             <img src="img/footer-logo.png" class="logo" alt="">
@@ -21,5 +17,4 @@
             </div> -->
         </div>
     </footer>
-</body>
-    </html>
+    

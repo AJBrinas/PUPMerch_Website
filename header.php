@@ -4,32 +4,25 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav">
-            <img src="img/logo.png" class="logo" alt="">
-            <!--search-->
-            <link rel="stylesheet" href="css/nav.css">
-            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-            <div class="search">
-                <input class="search-box" type="text" placeholder="Search for any product">
-                <a class="search-btn"  href="#">
-                    <i class="fas fa-search"></i>
-                </a>
+      <div class="nav">
+            <img src="img/logo.png" class="brand-logo" alt="">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand, product">
+                    <button class="search-btn">
+                        <img src="img/search.png" alt="">
+                    </button>
+                </div>
+                <a href="#"><img src="img/user.png" alt=""></a>
+                <a href="#"><img src="img/cart.png" alt=""></a>
             </div>
         </div>
-    <!--user cart & navigation bar-->
-    <div class="nav-items">
-        <a href="admin/admin.html"><img src="img/user.png" alt=""></a>
-        <a href="#"><img src="img/cart.png" alt=""></a>
-    </div>
-    <div class="links-container">
-        <ul>
-            <li class="link-item"><a href="#" class="link">Home</a></li>
-            <li class="link-item"><a href="#" class="link">Products</a></li>
-            <li class="link-item"><a href="#" class="link">About Us</a></li>
-            <li class="link-item"><a href="#" class="link">Size Chart</a></li>
-            <li class="link-item"><a href="#" class="link">FAQs</a></li>
-           
+        <ul class="links-container">
+            <li class="link-item"><a href="home.php" class="link">home</a></li>
+            <li class="link-item"><a href="product.php" class="link">Products</a></li>
+            <li class="link-item"><a href="aboutus.php" class="link">About Us</a></li>
+            <li class="link-item"><a href="sizechart.php" class="link">Size Chart</a></li>
+            <li class="link-item"><a href="faqs.php" class="link">FAQs</a></li>
         </ul>
     </div>
     </nav>

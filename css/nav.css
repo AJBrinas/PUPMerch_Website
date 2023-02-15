@@ -42,16 +42,15 @@
     color: #a9a9a9;
     outline: none;
 }
-.search-btn{
+.search-btn img{
     width: 20%;
-    height: 40px;
+    height: 30px;
     padding: 10px 20px;
     border: none;
     outline: none;
     cursor: pointer;
     background: #800000;
     color: #fff;
-    text-transform: capitalize;
     font-size: 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -60,7 +59,6 @@
 .search-box::placeholder{
     color: #a9a9a9;
 }
-
 .nav-items a{
     margin-left: 20px;
 }
