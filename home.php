@@ -12,9 +12,9 @@
             <img src="img/banner4.png" class="slideshow-img">
                 </div>
             </header>
-
         <!--product best selling-->
             <section class="product">
+            <body style="background-color: #f5f5f5;">
                 <h2 class="product-category">best selling</h2>
                 <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
                 <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
@@ -30,7 +30,7 @@
                             <span class="price">₱200</span>
                         </div>
                     </div>
-            <!--product2-->
+             <!--product2-->
                     <div class="product-card">
                         <div class="product-image">
                             <img src="img/card2.png" class="product-thumb" alt="">
@@ -160,5 +160,3 @@
      <!--footer-->
 <?php include 'footer.php';
        ?>
-</body>
-</html>

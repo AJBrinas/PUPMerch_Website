@@ -1,6 +1,6 @@
 
-<?php include 'header.php';?>
-
+<?php include 'header.php';
+?>
 
 <html>
 <title>Products</title>
@@ -80,7 +80,7 @@
               <!--product 4 container-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
+                
                   <img src="img/shirt4.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -89,8 +89,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span >
                 </div>
               </div>
             </td>
@@ -133,7 +132,6 @@
               <!--product 7-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt7.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -142,8 +140,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -151,7 +148,6 @@
               <!--product 7-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt8.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -160,8 +156,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -169,7 +164,6 @@
               <!--product 9-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt9.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -178,8 +172,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -190,7 +183,6 @@
               <!--product 10-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt10.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -199,8 +191,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -208,7 +199,6 @@
               <!--product 11-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt11.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -217,8 +207,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -226,7 +215,6 @@
               <!--product 12-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt12.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -235,8 +223,8 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
+                  
                 </div>
               </div>
             </td>
@@ -247,7 +235,7 @@
               <!--product 13-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
+            
                   <img src="img/shirt13.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -256,8 +244,8 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
+                  
                 </div>
               </div>
             </td>
@@ -267,7 +255,6 @@
     </section>
 
     <footer></footer>
-
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/home.js"></script>
