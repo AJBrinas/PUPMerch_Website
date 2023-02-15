@@ -1,17 +1,17 @@
-// Since we want navbar (eto ung mga buttons na home, faqs etc) in all pages, 
+// Since we want navbar (eto ung mga buttons na home, faqs etc) in all pages,
 // we create navbar with JS dynamically  and make a createNav function inside it.
-// Sa loob ng function, gumamit tayo ng querySelector method to select nav elements. 
-// And then write its HTML using innerHTML na ang value non ay the same HTML elements 
-// that we have made home.php file para pwede na nating maremove lahat ng HTML 
-// elements from there at iimport ang nav.js to make the codes shorter. 
+// Sa loob ng function, gumamit tayo ng querySelector method to select nav elements.
+// And then write its HTML using innerHTML na ang value non ay the same HTML elements
+// that we have made home.php file para pwede na nating maremove lahat ng HTML
+// elements from there at iimport ang nav.js to make the codes shorter.
 // kaya sya sa home.php not in index.php kasi sa index.php ininclude na natin ung header don.
 //bale hindi na tayo nag lagay ng <script src="js/nav.js"></script>.
-//at sa tuwing makikita nyo tong script keme na yan, basahin nyo ung line 6 na comment ko. 
+//at sa tuwing makikita nyo tong script keme na yan, basahin nyo ung line 6 na comment ko.
 
 const createNav = () => {
-    let nav = document.querySelector('.navbar');
+  let nav = document.querySelector(".navbar");
 
-    nav.innerHTML = `
+  nav.innerHTML = `
         <div class="nav">
             <img src="img/logo.png" class="brand-logo" alt="">
             <div class="nav-items">
@@ -21,7 +21,18 @@ const createNav = () => {
                     <img src="img/search.png" width="35%" height="100%" alt="">
                     </button>
                 </div>
-                <a href="#"><img src="img/user.png" alt=""></a>
+                <link rel="stylesheet" href="css/nav.css">
+            <div class="dropdown">           
+            <button class="dropbtn">
+                <a href="header.php"><img src="img/user.png" alt="user logo"></a>              
+            </button>
+            
+              
+            <div class="dropdown-content">
+                <a href="UserLog.php" class="link">Login</a>
+                <a href="register.php" class="link">Sign Up</a>
+                </div>
+        </div>
                 <a href="#"><img src="img/cart.png" alt=""></a>
             </div>
         </div>
@@ -33,5 +44,5 @@ const createNav = () => {
             <li class="link-item"><a href="faqs.php" class="link">FAQs</a></li>
         </ul>
     `;
-}
+};
 createNav();
