@@ -176,7 +176,7 @@ body {
 	padding-bottom: 12px;
 	font-size: 13px;
 	text-align: left;
-	border-bottom: 1px solid var(--grey);
+	border-bottom: 2px solid var(--grey);
 }
 #content main .table-data .order table td {
 	padding: 16px 0;
@@ -198,7 +198,7 @@ body {
 }
 #content main .table-data .order table tr td .status {
 	font-size: 10px;
-	padding: 6px 16px;
+	padding: 6px 50px;
 	color: var(--light);
 	border-radius: 20px;
 	font-weight: 700;
