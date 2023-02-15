@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('<link rel="stylesheet" href="https://kit.fontawesome.com/8cfb7773d7.css" crossorigin="anonymous">');
+@import 'nav.css';
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #a9a9a9;
+  background-color: #d1d1d1;
   color: #fff;
 }
 

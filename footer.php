@@ -1,4 +1,3 @@
-
 <footer>
         <div class="footer-content">
             <img src="img/footer-logo.png" class="logo" alt="">

@@ -4,8 +4,10 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+    <nav class="navbar">
       <div class="nav">
             <img src="img/logo.png" class="brand-logo" alt="">
+          <nav class="navbar">
             <div class="nav-items">
                 <div class="search">
                     <input type="text" class="search-box" placeholder="search brand, product">
@@ -27,4 +29,4 @@
     </div>
     </nav>
 </body>
-</html>
+</html> 
