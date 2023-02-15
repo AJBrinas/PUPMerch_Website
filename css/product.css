@@ -1,3 +1,6 @@
+@import 'css/nav.css';
+@import 'css/home.css';
+
 .product-details{
     width: 100%;
     padding: 60px 10vw;

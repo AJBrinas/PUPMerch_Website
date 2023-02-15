@@ -1,7 +1,10 @@
+
+
 .aboutus{
     position: relative;
     overflow: hidden;
     padding: 20px 0;
+    background-color: #fff;
 }
 .aboutus-h2{
     padding: 0 10vw;
