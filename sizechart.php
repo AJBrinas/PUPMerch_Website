@@ -3,6 +3,7 @@
             ?>
 
         <link rel="stylesheet" href="css/sizechart.css">
+        <body style="background-color: #d1d1d1;">
         <section class="sizechart">
                 <h2 class="sizechart-category">Shirt Size Chart</h2>
 

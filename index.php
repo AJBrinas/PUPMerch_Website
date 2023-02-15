@@ -16,6 +16,7 @@
 
 <!--product best selling-->
         <section class="product">
+        <body style="background-color: #f5f5f5;">
             <h2 class="product-category">best selling</h2>
             <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
@@ -97,79 +98,70 @@
             <!--product7-->
                 <div class="product-card">
                     <div class="product-image">
-               
-                        <img src="img/card7.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                    <img src="img/card7.png" class="product-thumb" alt="">
+                            <button class="card-btn">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">brand</h2>
+                            <p class="product-short-des">a short line about the cloth..</p>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
-                        <span class="price">$20</span>
-                </div>
-            <!--product8-->
-                <div class="product-card">
-                    <div class="product-image">
-               
-                        <img src="img/card8.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                <!--product8-->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/card8.png" class="product-thumb" alt="">
+                            <button class="card-btn">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">brand</h2>
+                            <p class="product-short-des">a short line about the cloth..</p>
+                            <span class="price">$20</span>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
-                        <span class="price">$20</span>
+                <!--product9-->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/card9.png" class="product-thumb" alt="">
+                            <button class="card-btn">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">brand</h2>
+                            <p class="product-short-des">a short line about the cloth..</p>
+                            <span class="price">$20</span>
+                        </div>
                     </div>
-                </div>
-            <!--product9-->
-                <div class="product-card">
-                    <div class="product-image">
-                      
-                        <img src="img/card9.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
-                        <span class="price">$20</span>
-                    </div>
-                </div>
-            <!--product10-->
-                <div class="product-card">
-                    <div class="product-image">
-                     
-                        <img src="img/card10.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
-                        <span class="price">$20</span>
+                <!--product10-->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/card10.png" class="product-thumb" alt="">
+                            <button class="card-btn">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">brand</h2>
+                            <p class="product-short-des">a short line about the cloth..</p>
+                            <span class="price">$20</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    <!--collections-->
-        <section class="collection-container">
-            <a href="#" class="collection">
-                <img src="img/women-collection.png" alt="">
-                <p class="collection-title">Iskolar<br> shirts</p>
-            </a>
-            <a href="#" class="collection">
-                <img src="img/men-collection.png" alt="">
-                <p class="collection-title">Iskolar <br> Shirts</p>
-            </a>
-            <a href="#" class="collection">
-                <img src="img/accessories-collection.png" alt="">
-                <p class="collection-title">Accessories</p>
-            </a>
-        </section>
+            </section>
+        <!--collections-->
+            <section class="collection-container">
+                <a href="#" class="collection">
+                    <img src="img/women-collection.png" alt="">
+                    <p class="collection-title">Iskolar<br> shirts</p>
+                </a>
+                <a href="#" class="collection">
+                    <img src="img/men-collection.png" alt="">
+                    <p class="collection-title">Iskolar <br> Shirts</p>
+                </a>
+                <a href="#" class="collection">
+                    <img src="img/accessories-collection.png" alt="">
+                    <p class="collection-title">Accessories</p>
+                </a>
+            </section>
 
-        <script src="js/nav.js"></script>
-        <script src="js/home.js"></script>
-
-
-    <!--footer-->
-    <footer> </footer>
-    <?php include 'footer.php'; ?>
-
-</body>
-</html>
+            <script src="js/nav.js"></script>
+            <script src="js/home.js"></script>
+     <!--footer-->
+<?php include 'footer.php';
+       ?>
