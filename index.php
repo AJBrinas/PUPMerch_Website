@@ -202,8 +202,7 @@
 
 
     <!--footer-->
-    <footer>
-    </footer>
+    <footer> </footer>
     <?php include 'footer.php'; ?>
 
 </body>
