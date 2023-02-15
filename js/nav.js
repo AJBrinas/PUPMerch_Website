@@ -18,7 +18,7 @@ const createNav = () => {
                 <div class="search">
                     <input type="text" class="search-box" placeholder="search brand, product">
                     <button class="search-btn">
-                    <img src="img/search.png" alt="">
+                    <img src="img/search.png" width="35%" height="100%" alt="">
                     </button>
                 </div>
                 <a href="#"><img src="img/user.png" alt=""></a>

@@ -41,7 +41,7 @@
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="royettev.png">
-                    <img src="img/royettev.png" alt="royette" width="400" height="400">
+                    <img src="img/royette.jpg" alt="royette" width="400" height="400">
                     </a>
                         <div class="desc">Vergara, Royette</div>
                 </div>
