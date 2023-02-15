@@ -1,3 +1,13 @@
+// Since we want navbar (eto ung mga buttons na home, faqs etc) in all pages, 
+// we create navbar with JS dynamically  and make a createNav function inside it.
+// Sa loob ng function, gumamit tayo ng querySelector method to select nav elements. 
+// And then write its HTML using innerHTML na ang value non ay the same HTML elements 
+// that we have made home.php file para pwede na nating maremove lahat ng HTML 
+// elements from there at iimport ang nav.js to make the codes shorter. 
+// kaya sya sa home.php not in index.php kasi sa index.php ininclude na natin ung header don.
+//bale hindi na tayo nag lagay ng <script src="js/nav.js"></script>.
+//at sa tuwing makikita nyo tong script keme na yan, basahin nyo ung line 6 na comment ko. 
+
 const createNav = () => {
     let nav = document.querySelector('.navbar');
 

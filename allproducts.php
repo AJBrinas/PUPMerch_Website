@@ -25,7 +25,6 @@
               <!--product 1 container-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt1.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -34,8 +33,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -100,7 +98,6 @@
               <!--product 5-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt5.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -109,8 +106,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
@@ -118,7 +114,6 @@
               <!--product 6-->
               <div class="product-card">
                 <div class="product-image">
-                  <span class="discount-tag">50% off</span>
                   <img src="img/shirt6.jpg" class="product-thumb" alt="" />
                   <button class="card-btn">add to cart</button>
                 </div>
@@ -127,8 +122,7 @@
                   <p class="product-short-des">
                     a short line about the cloth..
                   </p>
-                  <span class="price">$20</span
-                  ><span class="actual-price">$40</span>
+                  <span class="price">$20</span>
                 </div>
               </div>
             </td>
