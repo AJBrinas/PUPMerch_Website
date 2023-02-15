@@ -10,7 +10,7 @@
     <body>
         
         
-        <link rel="stylesheet" href="users.css">
+        <link rel="stylesheet" href="css/users.css">
         <script src="js/slideshow.js" defer></script>
             <header class="intro">
                 <div class="intro-slideshow">

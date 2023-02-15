@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Customer Log In</title>
-    <link rel="stylesheet" href="users.css">
+    <link rel="stylesheet" href="css/users.css">
   </head>
   <body>
 
-    <link rel="stylesheet" href="users.css">
-    <script src="img/slideshow.js" defer></script>
+    <link rel="stylesheet" href="css/users.css">
+    <script src="js/slideshow.js" defer></script>
         <header class="intro">
             <div class="intro-slideshow">
         <img src="img/1.png" class="slideshow-img">
         <img src="img/2.png" class="slideshow-img">
         <img src="img/3.png" class="slideshow-img">
-        <img src="img/4 .png" class="slideshow-img">
+        <img src="img/4.png" class="slideshow-img">
             </div>
         </header>
 
@@ -38,7 +38,7 @@
 
 
         <div class="signup_link">
-          Not a member? <a href="Register.html">Signup</a>
+          Not a member? <a href="register.php">Signup</a>
         </div>
       </form>
     </div>
