@@ -6,7 +6,7 @@
 
         <!--Heading-->    
         <link rel="stylesheet" href="css/faqs.css">
-        <<section class="faqs">
+        <section class="faqs">
             <h2 class="faqs-h2">Frequently Asked Questions</h2>
 
         <!--FAQ 1-->

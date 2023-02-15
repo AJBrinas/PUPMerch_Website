@@ -1,7 +1,6 @@
 @import 'nav.css';
 @import 'footer.css';
 /* inimport si nav.css and footer.css  */
-
 .product{
     position: absolute;
     overflow: hidden;
@@ -46,17 +45,6 @@
     width: 100%;
     height: 350px;
     object-fit: cover;
-}
-
-.discount-tag{
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #800000;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
 }
 
 .card-btn{

@@ -24,7 +24,7 @@ const createNav = () => {
                 <link rel="stylesheet" href="css/nav.css">
             <div class="dropdown">           
             <button class="dropbtn">
-                <a href="header.php"><img src="img/user.png" alt="user logo"></a>              
+                <a href="js/nav.js"><img src="img/user.png" alt="user logo"></a>              
             </button>
             
               
