@@ -17,7 +17,9 @@ const createNav = () => {
             <div class="nav-items">
                 <div class="search">
                     <input type="text" class="search-box" placeholder="search brand, product">
-                    <button class="search-btn">search</button>
+                    <button class="search-btn">
+                    <img src="img/search.png" alt="">
+                    </button>
                 </div>
                 <a href="#"><img src="img/user.png" alt=""></a>
                 <a href="#"><img src="img/cart.png" alt=""></a>
