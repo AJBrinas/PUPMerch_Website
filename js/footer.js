@@ -1,5 +1,4 @@
-
-
+//same lng ng explanation na nasa nav.js at home.js 
 const createFooter = () => {
     let footer = document.querySelector('footer');
 

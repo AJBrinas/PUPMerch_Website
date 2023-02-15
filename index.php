@@ -29,7 +29,6 @@
             <li class="link-item"><a href="#" class="link">About Us</a></li>
             <li class="link-item"><a href="#" class="link">Size Chart</a></li>
             <li class="link-item"><a href="#" class="link">FAQs</a></li>
-            <li><a href="product.html">fuck</a></li>
         </ul>
     </div>
     </nav>-->
@@ -47,7 +46,7 @@
         <img src="img/banner3.png" class="slideshow-img">
         <img src="img/banner4.png" class="slideshow-img">
             </div>
-        </header> -->
+        </header> 
 
 <!--product best selling-->
         <section class="product">
@@ -204,23 +203,8 @@
 
     <!--footer-->
     <footer>
-        <div class="footer-content">
-            <img src="img/footer-logo.png" class="logo" alt="">
-            <div class="footer-ul-container">
-                <ul class="category">
-                    <li class="category-title">Contact us</li>
-                    <li><a href="#" class="footer-link">Email</a></li>
-                    <li><a href="#" class="footer-link">Facebook Page</a></li>
-                    <li><a href="#" class="footer-link">Instagram</a></li>
-                </ul>
-                <div class="footer-social-container">
-                    <div>
-                        <a href="#" class="social-link">terms & services</a>
-                        <a href="#" class="social-link">privacy page</a>
-                    </div>
-            </div>
-        </div>
     </footer>
+    <?php include 'footer.php'; ?>
 
 </body>
 </html>

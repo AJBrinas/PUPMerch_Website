@@ -1,3 +1,5 @@
+
+//para lng sa slideshow 
 const slideshowImages = document.querySelectorAll(".intro-slideshow img");
 
 const nextImageDelay = 2000;
