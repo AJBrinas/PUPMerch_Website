@@ -36,7 +36,7 @@
                         <div class="desc">Pajela, Jane Samer</div>
                 </div>
                 <div class="gallery">
-                    <img src="img/royette.jpg" alt="royette" width="400" height="400">
+                    <img src="img/royette.png" alt="royette" width="400" height="400">
                     </a>
                         <div class="desc">Vergara, Royette</div>
                 </div>

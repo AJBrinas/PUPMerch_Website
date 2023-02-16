@@ -29,7 +29,7 @@
                     <table style="width:100%">
                     <thead>
                    
-                                <th>Order No.</th>
+                                <th>Order ID</th>
                                 <th>Product Details</th>
                                 <th>QTY.</th>
                                 <th>Total Amount</th>

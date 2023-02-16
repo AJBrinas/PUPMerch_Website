@@ -51,25 +51,25 @@
 		
 		<ul class="side-menu">
 			<li>
-				<a href="#">
+				<a href="outofstock.php">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Out of Stock</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="lowstock.php">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Low Stock</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="delisting.php">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Delisting Product</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="bestselling.php">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Best Selling Product</span>
 				</a>
