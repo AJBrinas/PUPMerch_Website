@@ -36,7 +36,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="orders.php">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">Orders</span>
 				</a>

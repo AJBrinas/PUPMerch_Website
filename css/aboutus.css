@@ -1,10 +1,9 @@
-
-
+@import 'css/nav.css';
 .aboutus{
     position: relative;
     overflow: hidden;
     padding: 20px 0;
-    background-color: #d1d1d1;
+    background-color: #fff;
 }
 .aboutus-h2{
     padding: 0 10vw;
