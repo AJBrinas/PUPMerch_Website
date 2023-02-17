@@ -18,7 +18,7 @@
  <link rel="stylesheet" href="css/nav.css">
             <div class="dropdown">           
             <button class="dropbtn">
-                <a href="js/nav.js"><img src="img/user.png" alt="user logo"></a>              
+                <img src="img/user.png" alt="user logo">            
             </button>
             
               
