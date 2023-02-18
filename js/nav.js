@@ -33,7 +33,7 @@ const createNav = () => {
                 <a href="register.php" class="link">Sign Up</a>
                 </div>
         </div>
-                <a href="#"><img src="img/cart.png" alt=""></a>
+                <a href="cart.php"><img src="img/cart.png" alt="cart"></a>
             </div>
         </div>
         <ul class="links-container">
