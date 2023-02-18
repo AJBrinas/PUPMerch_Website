@@ -32,6 +32,10 @@ class Database {
         {
             return false;
         }
+        else 
+        {
+            echo 'sheesh';
+        }
         
     }
 
@@ -54,4 +58,22 @@ $data = $DB->read($query);
     // } catch (PDOException $e){
     //     die("Unsuccessful Connection: ".$e->getMessage());
     // }
+
+//-------------------------------------------------------------------------
+// require_once 'config.php';
+
+
+// if (isset($_POST['userSubmit'])){
+//     $fname = $_POST['Fname'];
+//     $cnt = $_POST['country'];
+
+//     $sql = "INSERT INTO Members (FirstName, Country) VALUES (?,?);";
+//     $sd = array(&$fname, &$cnt);
+//     $query = $connect->prepare($sql);
+//     $insert = $query->execute($sd);
+//     }
+
+
+// header('location:index.php?Success');
+
 ?>
