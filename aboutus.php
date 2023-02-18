@@ -1,46 +1,173 @@
-
-    <?php 
+<?php 
     include 'header.php';
     ?>
-        <!--Heading-->    
-        <!--About Us-->
-        <link rel="stylesheet" href="css/aboutus.css">
 
-         <section class="aboutus">
-                <h2 class="aboutus-h2">ABOUT US</h2>
-                <p class="aboutus-p" > The fashion-forward apparel line for every PUPian, because excellent brains deserve outstanding look. We strive to create one-of-a-kind t-shirt designs that can be worn on a regular basis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non porta nunc. Suspendisse id metus consequat risus tincidunt dignissim lobortis lobortis nisl. Curabitur commodo posuere orci, ut fringilla quam. In est lorem, dapibus eu consequat quis, iaculis ut est. Suspendisse laoreet est quis metus sagittis auctor. Sed tristique aliquet velit, at luctus lectus ultrices vitae. Morbi id tortor et sem volutpat vestibulum id sit amet diam. Nunc scelerisque dignissim ipsum, vitae volutpat est vulputate non. Maecenas id mattis magna. Morbi semper iaculis diam et blandit. Phasellus ut tellus eget augue blandit vestibulum ut nec odio. Cras sem mi, laoreet vitae facilisis nec, facilisis quis dui. Nullam pulvinar iaculis neque id rhoncus. Nulla ligula orci, gravida quis maximus non, euismod eu metus. Maecenas lacinia neque erat, non molestie lorem efficitur sit amet.</p>
-                <h2 class="ourteam-h2">OUR TEAM</h2>
-                <div class="gallery">
-                    <img src="img/andrew.png" alt="andrew" width="400" height="400">
-                    </a>
-                        <div class="desc">Brinas, Andrew</div>
-                </div>
-                <div class="gallery">
-                    <img src="img/janna.png" alt="Janna" width="400" height="400">
-                    </a>
-                        <div class="desc">Enriquez, Janna Manuela</div>
-                </div>
-                <div class="gallery">
-                    <img src="img/mejela.jpg" alt="meje" width="400" height="400">
-                    </a>
-                        <div class="desc">Mejela, Gojol</div>
-                </div>
-                <div class="gallery">
-                    <img src="img/ian.jpg" alt="ian" width="400" height="400">
-                    </a>
-                        <div class="desc">Manabat, Charles Adriane</div>
-                </div>
-                <div class="gallery">
-                    <img src="img/jane.png" alt="jane" width="400" height="400">
-                    </a>
-                        <div class="desc">Pajela, Jane Samer</div>
-                </div>
-                <div class="gallery">
-                    <img src="img/royette.png" alt="royette" width="400" height="400">
-                    </a>
-                        <div class="desc">Vergara, Royette</div>
-                </div>
-                
-                <script src="js/nav.js"></script>
-                <script src="js/home.js"></script>
-                
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
+    
+  <body>
+  <section 
+    class="aboutus">
+        <h1> About Us </h1>
+        <p class="aboutus-p" > The fashion-forward apparel line for every PUPian, because excellent brains deserve outstanding look. We strive to create one-of-a-kind t-shirt designs that can be worn on a regular basis. </p>
+    <section>
+      <div class="row">
+        <h2>Our Team</h2>
+      </div>
+      <div class="row">
+        <!-- Column 1-->
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/andrew.png" />
+            </div>
+            <h3>Andrew Brinas</h3>
+            <p>Developer</p>
+            <div class="icons">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2-->
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/janna.png" />
+            </div>
+            <h3>Janna Manuela Enriquez</h3>
+            <p>Developer</p>
+            <div class="icons">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Column 3-->
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/mejela.jpg" />
+            </div>
+            <h3>Mejela Gojol</h3>
+            <p>Developer</p>
+            <div class="icons">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <!-- Column 4-->
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/ian.jpg" />
+            </div>
+            <h3>Charles Adrianne Manabat</h3>
+            <p>Developer</p>
+            <div class="icons">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Column 5-->
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/jane.png" />
+            </div>
+            <h3>Jane Samer Pajela</h3>
+            <p>Developer</p>
+            <div class="icons">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Column 6-->
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/royette.png" />
+            </div>
+            <h3>Royette Vergara</h3>
+            <p>Developer</p>
+            <div class="icons">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/nav.js"></script>
+            <script src="js/home.js"></script>
+  
+  </body>
+</html>

@@ -3,9 +3,11 @@
     include 'header.php';
 ?>
 
+<link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/cart.css">
-<table class="cart-table">
 
+
+<table class="cart-table">
 <h2 class="cart-category">My Cart</h2>
 
   <thead>
@@ -56,3 +58,6 @@
 </div>
 </div>
 
+            <script src="js/nav.js"></script>
+            <script src="js/home.js"></script>
+  

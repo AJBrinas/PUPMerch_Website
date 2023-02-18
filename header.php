@@ -15,20 +15,21 @@
                         <img src="img/search.png" width="35%" height="100%" alt="">
                     </button>
                 </div>
- <link rel="stylesheet" href="css/nav.css">
+
             <div class="dropdown">           
             <button class="dropbtn">
-                <a href="js/nav.js"><img src="img/user.png" alt="user logo"></a>              
+                <img src="img/user.png" alt="user logo">            
             </button>
             
-              
             <div class="dropdown-content">
                 <a href="UserLog.php" class="link">Login</a>
                 <a href="register.php" class="link">Sign Up</a>
 
             </div>
         </div>
-                <a href="#"><img src="img/cart.png" alt=""></a>
+
+                <img src="img/cart.png" alt="cart">
+                
             </div>
         </div>
         <ul class="links-container">
