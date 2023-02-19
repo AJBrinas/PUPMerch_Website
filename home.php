@@ -150,8 +150,8 @@
                     <p class="collection-title">Iskolar <br> Shirts</p>
                 </a>
                 <a href="#" class="collection">
-                    <img src="img/accessories-collection.png" alt="">
-                    <p class="collection-title">Accessories</p>
+                    <img src="img/comingsoon.png" alt="">
+                   
                 </a>
             </section>
 
