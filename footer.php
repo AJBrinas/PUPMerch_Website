@@ -55,6 +55,7 @@
               <li><a href="#">Lanyards</a></li>
               <li><a href="#">Jacket</a></li>
               <li><a href="#">Notebook</a></li>
+              <li><a href="#">Tumbler</a></li>
             </ul>
           </div>
           <div class="footer-widget">
@@ -63,7 +64,7 @@
               <li><a href="#">Support Center</a></li>
               <li><a href="#">Feedback</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#">terms &amp; conditions</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
             </ul>
           </div>
         </div>

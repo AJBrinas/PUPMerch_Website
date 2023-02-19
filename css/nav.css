@@ -38,7 +38,6 @@
   border-bottom-left-radius: 10px;
   border: 1px solid #d1d1d1;
   background: none;
-  color: #a9a9a9;
   outline: none;
 }
 .search-btn {
@@ -87,10 +86,10 @@
 }
 
 .dropbtn {
-  padding: 16px;
-  font-size: 16px;
+  padding-left: 15px;
   border: none;
   cursor: pointer;
+  background-color: #f5f5f5;
 }
 
 .dropdown {
