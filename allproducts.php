@@ -122,10 +122,13 @@
       </div>
     </section>
 
-    <footer></footer>
+
     <script src="js/nav.js"></script>
     <script src="js/home.js"></script>
     <script src="js/product.js"></script>
+    <?php 
+    include 'footer.php';
+    ?>
   
 
   
