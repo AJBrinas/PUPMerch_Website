@@ -35,17 +35,17 @@
           <div class="footer-widget">
             <h6>Quick Link</h6>
             <ul class="links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Size Chart</a></li>
-              <li><a href="#">FAQS</a></li>
+              <li><a href="home.php">Home</a></li>
+              <li><a href="product.php">Products</a></li>
+              <li><a href="aboutus.php">About us</a></li>
+              <li><a href="sizechart.php">Size Chart</a></li>
+              <li><a href="faqs.php">FAQs</a></li>
             </ul>
           </div>
           <div class="footer-widget">
             <h6>Products</h6>
             <ul class="links">
-              <li><a href="#">T-Shirts</a></li>
+              <li><a href="allaboutus.php">T-Shirts</a></li>
               <li><a href="#">Lanyards</a></li>
               <li><a href="#">Jacket</a></li>
               <li><a href="#">Notebook</a></li>

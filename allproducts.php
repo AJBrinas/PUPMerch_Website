@@ -127,6 +127,5 @@
     <script src="js/home.js"></script>
     <script src="js/product.js"></script>
   
-<?php include 'footer.php';
-?>
+
   

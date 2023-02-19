@@ -14,5 +14,7 @@
                 </div>
                
                 <script src="js/nav.js"></script>
-    
+<?php 
+    include 'footer.php';
+    ?>
             
