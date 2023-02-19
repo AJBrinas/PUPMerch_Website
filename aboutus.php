@@ -23,7 +23,7 @@
               <img src="img/andrew.png" />
             </div>
             <h3>Andrew Brinas</h3>
-            <p>Developer</p>
+            <p>Clown</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
@@ -47,7 +47,7 @@
               <img src="img/janna.png" />
             </div>
             <h3>Janna Manuela Enriquez</h3>
-            <p>Developer</p>
+            <p>Panget</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
