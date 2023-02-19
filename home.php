@@ -149,10 +149,8 @@
                     <img src="img/men-collection.png" alt="">
                     <p class="collection-title">Iskolar <br> Shirts</p>
                 </a>
-                <a href="#" class="collection">
-                    <img src="img/comingsoon.png" alt="">
-                   
-                </a>
+        
+                
             </section>
 
             <script src="js/nav.js"></script>
