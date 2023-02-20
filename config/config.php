@@ -1,102 +1,101 @@
 <?php
 
-// use LDAP\Result;
+use LDAP\Result;
 
-// class Database 
-// {
-//     // Configuration 
+class Database 
+{
+    // Configuration 
 
-//     private $db_host = "ANDREW\SQLEXPRESS"; // Server Name
-//     private $user = "";
-//     private $pass = "";
-//     private $db_name = "merch_db"; // Database Name
+    private $db_host = "sqlsrv:Server=ANDREW\SQLExpress;Database=likhamerch_db"; // Server Name
+    private $user = "";
+    private $pass = "";
+    private $c = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
 
-//     public function db_conn()
-//     {
-//         // try{
-//             $connect = new PDO("sqlsrv:Server=$this->db_host;Database=$this->db_name", $this->user, $this->pass); // PDO dll Required
-//             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//             echo 'Panget si janna';
-//             // return true;
-//         // } 
-//         // catch (PDOException $e){
-//         //     die("Unsuccessful Connection: ".$e->getMessage());
-//         //     return false;
-//         // }
-//     }
+    private $result = array();
+    protected $connect;
 
-//     public function read($query)
-//     {
-//         $conn = $this->db_conn();
-//         $result = execute($conn, $query);
+    public function connections()
+    {
+        try{
+            $this->connect = new PDO($this->db_host, $this->user,$this->pass,$this->c);
+            // echo 'Panget si janna';
+            return $this->connect;
+        } 
+        catch (PDOException $e){
+            die("Unsuccessful Connection: ".$e->getMessage());
+        }
+    }
+
+    public function read($query)
+    {
+        $conn = $this->connections();
+        $result = execute($conn, $query);
         
-//         if(!$result)
-//         {
-//             return false;
-//         }
-//         else 
-//         {
-//             echo 'sheesh';
-//         }
+        if(!$result)
+        {
+            return false;
+        }
+        else 
+        {
+            echo 'sheesh';
+        }
         
-//     }
+    }
 
-//     public function c_list($query)
-//     {
-//         $conn = $this->db_conn();
-//         // $sql = "SELECT MemberID, FirstName, Country FROM Members ORDER BY MemberID ASC";
-//         $run = $cinn->prepare($query);
-//         $run->execute($run);
-//         $member = $run->fetchAll(PDO::FETCH_ASSOC);
-//         if(!$member)
-//         {
-//         $count = 0;
-//             foreach($member as $row){
-//                 $count++;
-//                 echo $row['cat_id'];
-//                 echo $row['cat_title'];
-//                 echo $row['products'];
-//             }
-//         }
-//         else
-//         {
-//             echo 'The table is blank';
-//         }
-//     }
-// }
+    public function select($table, $row = '*')
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "SELECT $row FROM $table;";
+
+        $query = $db->query($sql);
+        $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getResults()
+    {
+        $values = $this->result;
+        $this->result = array();
+        return $values;
+    }
+
+}
+
+
 // $DB = new Database();
-// // $DB->db_conn();
+// $DB->connections();
 // $query = "SELECT * FROM categories";
 // $data = $DB->c_list($query);
 //-----------------------------------------------------------------------
-    $db_host = "ANDREW\SQLEXPRESS"; // Server Name
-    $user = "";
-    $pass = "";
-    $db_name = "likhamerch_db"; // Database Name
+    // $db_host = "ANDREW\SQLEXPRESS"; // Server Name
+    // $user = "";
+    // $pass = "";
+    // $db_name = "likhamerch_db"; // Database Name
 
-    try{
-        $connect = new PDO("sqlsrv:Server=$db_host;Database=$db_name", $user, $pass); // PDO dll Required
-        $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        // echo 'Fuck this';
-    } catch (PDOException $e){
-        die("Unsuccessful Connection: ".$e->getMessage());
-    }
+    // try{
+    //     $connect = new PDO("sqlsrv:Server=$db_host;Database=$db_name", $user, $pass); // PDO dll Required
+    //     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //     // echo 'Fuck this';
+    // } catch (PDOException $e){
+    //     die("Unsuccessful Connection: ".$e->getMessage());
+    // }
 
-//-------------------------------------------------------------------------
-// require_once 'config.php';
-
-
-// if (isset($_POST['userSubmit'])){
-//     $fname = $_POST['Fname'];
-//     $cnt = $_POST['country'];
-
-//     $sql = "INSERT INTO Members (FirstName, Country) VALUES (?,?);";
-//     $sd = array(&$fname, &$cnt);
-//     $query = $connect->prepare($sql);
-//     $insert = $query->execute($sd);
-//     }
+    //-------------------------------------------------------------------------
+    // require_once 'config.php';
 
 
-// header('location:index.php?Success');
+    // if (isset($_POST['userSubmit'])){
+    //     $fname = $_POST['Fname'];
+    //     $cnt = $_POST['country'];
+
+    //     $sql = "INSERT INTO Members (FirstName, Country) VALUES (?,?);";
+    //     $sd = array(&$fname, &$cnt);
+    //     $query = $connect->prepare($sql);
+    //     $insert = $query->execute($sd);
+    //     }
+
+
+    // header('location:index.php?Success');
+
 
 ?>

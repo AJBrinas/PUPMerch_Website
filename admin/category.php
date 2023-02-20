@@ -1,9 +1,6 @@
 <?php 
     include 'sidebar.php';
-	include '../config/functions.php'
 ?>
-
-
 <main>
 	<div class="head-title">
 		<div class="left">
@@ -30,6 +27,11 @@
 				
 			</div>
 			<table>
+				<?php 
+					$database = new Database;
+					$database->select('categories', '*');
+					$result = $database->getResults();
+				?>
 				<thead>
 					<tr>
 						<th>Title</th>
@@ -39,12 +41,11 @@
 				</thead>
 				<tbody>
 					<?php 
-						if (!empty(category()))
+						if (!empty($result))
 						{
 							$count = 0;
-							foreach($categories as $row)
+							foreach($result as $row)
 							{ $count++;
-						
 					?>
 					<tr>
 						<td>
@@ -61,7 +62,7 @@
 						?>
 						<tr>
 							<td>
-								the table is Blank.
+								''----The table is Blank.----''
 							</td>
 						</tr>
 						<?php }?>
