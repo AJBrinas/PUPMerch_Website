@@ -152,9 +152,13 @@
                 <a href="#" class="collection">
                     <img src="img/bigsale.png" alt="">
                 </a>
+<<<<<<< Updated upstream
                 <a href="#" class="collection">
                     <img src="img/comingsoon.png" alt="">
                 </a>
+=======
+                
+>>>>>>> Stashed changes
             </section>
 
             <script src="js/nav.js"></script>
