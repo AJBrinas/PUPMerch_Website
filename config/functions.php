@@ -1,5 +1,7 @@
 <?php 
 
+    $result = array();
+
         function category()
         {
             // Including configuration + Fetching data from SQL 

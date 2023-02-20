@@ -26,22 +26,6 @@ class Database
         }
     }
 
-    public function read($query)
-    {
-        $conn = $this->connections();
-        $result = execute($conn, $query);
-        
-        if(!$result)
-        {
-            return false;
-        }
-        else 
-        {
-            echo 'sheesh';
-        }
-        
-    }
-
     public function select($table, $row = '*')
     {
         $database = new Database;
@@ -57,6 +41,11 @@ class Database
         $values = $this->result;
         $this->result = array();
         return $values;
+    }
+
+    public function update()
+    {
+        
     }
 
 }

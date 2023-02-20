@@ -1,7 +1,7 @@
 <?php 
     include 'sidebar.php';
 	// include '../config/config.php';
-	include '../config/queries.php';
+	//include '../config/queries.php';
 ?>
 
 
@@ -43,22 +43,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php 
-						if (!empty($categories))
-						{
-							$count = 0;
-							foreach($categories as $row)
-							{ $count++;
-						
-					?>
 					<tr>
-						<td><?php echo $row['cat_id']?></td>
+						<td></td>
 						<td></td>
 						<td>
-							<i class='bx bx-store-alt'></i><p><?php echo $row['cat_title']?></p>
+							<i class='bx bx-store-alt'></i><p></p>
 						</td>
 						<td></td>
-						<td><?php echo $row['products']?></td>
+						<td></td>
 						<td></td>
 						<td>
 						
@@ -68,15 +60,7 @@
 						<td></td>
 						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
 						<td><i class='bx bxs-edit' ></i><i class='bx bx-trash' ></i></td>
-						<?php 
-						}} else {
-						?>
-						<tr>
-                            <td>
-                                The table is Blank.
-                            </td>
-                        </tr>
-						<?php }?>
+						
 					
 
 						<tr>

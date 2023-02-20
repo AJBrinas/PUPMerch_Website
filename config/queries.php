@@ -11,4 +11,6 @@
     $query = $connect->prepare($sql);
     $query->execute();
     $categories = $query->fetchAll(PDO::FETCH_ASSOC);
+
+
  ?>
