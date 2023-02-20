@@ -241,7 +241,7 @@ body{
     object-fit: cover;
 }
 
-.collection p{
+/* .collection p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -249,8 +249,8 @@ body{
     text-align: center;
     color: #fff;
     font-size: 50px;
-    text-transform: capitalize;
-}
+
+} */
 
 .collection:nth-child(3){
     grid-column: span 2;

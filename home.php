@@ -142,15 +142,14 @@
         <!--collections-->
             <section class="collection-container">
                 <a href="#" class="collection">
-                    <img src="img/women-collection.png" alt="">
-                    <p class="collection-title">Iskolar<br> shirts</p>
+                    <img src="img/iskolarshirt.png" alt="">
                 </a>
                 <a href="#" class="collection">
-                    <img src="img/men-collection.png" alt="">
-                    <p class="collection-title">Iskolar <br> Shirts</p>
+                    <img src="img/bigsale.png" alt="">
                 </a>
-        
-                
+                <a href="#" class="collection">
+                    <img src="img/comingsoon.png" alt="">
+                </a>
             </section>
 
             <script src="js/nav.js"></script>
