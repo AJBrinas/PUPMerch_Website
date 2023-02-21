@@ -50,7 +50,9 @@ class Database
 
     public function insert()
     {
-        
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "INSERT INTO $table ()"
     }
 }
 

@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>ADMIN</title>
-        <link rel="stylesheet" href="addprod.css">
-        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="css/addprod.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
       </head>
 <body>
