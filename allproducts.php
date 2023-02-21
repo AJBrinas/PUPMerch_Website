@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                 <!--product3-->
+         <!--product3-->
                  <div class="product-card">
                     <div class="product-image">
                        
@@ -50,12 +50,12 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
+                        <h2 class="product-brand">Isko at Iska</h2>
                         <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
-            <!--product4-->
+        <!--product4-->
                 <div class="product-card">
                     <div class="product-image">
                         
@@ -63,12 +63,12 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
+                        <h2 class="product-brand">Mula Sayo</h2>
                         <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
-            <!--product5-->
+        <!--product5-->
                 <div class="product-card">
                     <div class="product-image">
                         
@@ -76,12 +76,12 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
+                        <h2 class="product-brand">PUPIAN</h2>
                         <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
-             <!--product6-->
+        <!--product6-->
                 <div class="product-card">
                     <div class="product-image">
                        
@@ -89,12 +89,12 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
+                        <h2 class="product-brand">Iskolar</h2>
                         <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch/p>
                         
                     </div>
                 </div>
-            <!--product7-->
+        <!--product7-->
                 <div class="product-card">
                     <div class="product-image">
                      
@@ -102,12 +102,12 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
+                        <h2 class="product-brand">PUP est 1904</h2>
                         <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
-            <!--product8-->
+        <!--product8-->
                 <div class="product-card">
                     <div class="product-image">
                         
@@ -115,7 +115,7 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
+                        <h2 class="product-brand">isko.</h2>
                         <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                 
            </div>
