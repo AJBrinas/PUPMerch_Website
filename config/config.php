@@ -45,9 +45,13 @@ class Database
 
     public function update()
     {
-        
+
     }
 
+    public function insert()
+    {
+        
+    }
 }
 
 
