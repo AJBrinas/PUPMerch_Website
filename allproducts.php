@@ -1,8 +1,8 @@
 
 <?php include 'header.php';
 ?>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <title>All Products</title>
 <head>
     <link rel="stylesheet" href="css/home.css" />
