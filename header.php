@@ -26,7 +26,7 @@
                 <a href="register.php" class="link">Sign Up</a>
 
             </div>
-        </div>
+        </div> 
 
                 <img src="img/cart.png" alt="cart">
                 

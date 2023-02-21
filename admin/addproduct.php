@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>ADMIN</title>
+<?php include 'sidebar.php' ?>
+
         <link rel="stylesheet" href="css/addprod.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-
-      </head>
 <body>
     <div class="addprod">
         
     <div class="admin-content-container">
         <h2 class="admin-heading">Add New Product</h2>
         <form id="createProduct" class="add-post-form row">
-            <div class="col-md-9">
+            <div class="col-md-7">
                 <div class="form-group">
                     <label for="">Product Title</label>
                     <input type="text" class="form-control product_title" name="product_title" placeholder="Product Title" requried/>

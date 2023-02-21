@@ -24,7 +24,7 @@
 		<div class="order">
 			<div class="head">
 				<h3>All Products</h3>
-				<i class='bx bxs-add-to-queue' ></i><p>Add Product </p>
+				<a href="addproduct.php"><i class='bx bxs-add-to-queue' ></i><p>Add Product </p></a>
 				<i class='bx bx-filter' ></i>
 				
 			</div>

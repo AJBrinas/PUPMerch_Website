@@ -52,7 +52,7 @@ class Database
     {
         $database = new Database;
         $db = $database->connections();
-        $sql = "INSERT INTO $table ()"
+        $sql = "INSERT INTO $table ()";
     }
 }
 
