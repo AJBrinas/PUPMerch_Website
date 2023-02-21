@@ -23,8 +23,8 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">Mula Sayo, Para sa Bayan </h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                         <button class="card-btn">add to cart</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">Cats of PUPQC</h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch/p>
                         
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                 
            </div>
       </div>
