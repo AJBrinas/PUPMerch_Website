@@ -12,7 +12,7 @@
      <div class="wrapper">
     <div class="footer-widget">
         <img src="img/footer-logo.png" class="logo" >
-        <p class="desc">
+        <p style="color: white;">
             The fashion-forward apparel line for every PUPian, because excellent brains deserve outstanding look. We strive to create one-of-a-kind t-shirt designs that can be worn on a regular basis.
             </p>
             <ul class="socials">
