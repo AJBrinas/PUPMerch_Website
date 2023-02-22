@@ -85,7 +85,8 @@ body{
 }
 
 .product-brand{
-    text-transform: uppercase;
+    
+    font-size: 30px;
 }
 
 .product-short-des{
@@ -113,8 +114,8 @@ body{
     padding: 0 10vw;
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 40px;
-    text-transform: capitalize;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .product-container{
     padding: 0 10vw;
@@ -132,6 +133,7 @@ body{
     width: 250px;
     height: 450px;
     margin-right: 20px;
+    
 }
 
 .product-image{
