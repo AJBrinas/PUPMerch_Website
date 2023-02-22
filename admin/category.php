@@ -1,12 +1,8 @@
 <?php 
     include 'sidebar.php';
-<<<<<<< Updated upstream
-?>
-=======
 	include '../config/functions.php';
 ?>
 
->>>>>>> Stashed changes
 <main>
 	<div class="head-title">
 		<div class="left">
@@ -30,7 +26,6 @@
 				<h3>All Categories</h3>
 				<i class='bx bxs-add-to-queue' ></i><p>Add Category </p>
 				<i class='bx bx-filter' ></i>
-				
 			</div>
 			<table>
 				<?php 

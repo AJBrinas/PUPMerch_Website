@@ -54,7 +54,7 @@
 </table>
 
 <div class="checkout-container">
-  <button class="checkout-button">Proceed to Checkout</button>
+  <a class="checkout-button" style="text-decoration:none" href="UserLog.php">Proceed to Checkout</a>
 </div>
 </div>
 

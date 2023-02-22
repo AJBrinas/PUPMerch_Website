@@ -56,11 +56,12 @@ td {
   margin-top: 10px;
 }
 
-.checkout-button {
+ .checkout-button {
   margin: 50px 50px;
   background-color: #0000cd;
   color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
+  
 }

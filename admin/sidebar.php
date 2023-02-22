@@ -52,16 +52,10 @@
 		</ul>
 		
 		<ul class="side-menu">
-			<li>
-				<a href="outofstock.php">
+		<li>
+				<a href="inventory.php">
 					<i class='bx bxs-cog' ></i>
-					<span class="text">Out of Stock</span>
-				</a>
-			</li>
-			<li>
-				<a href="lowstock.php">
-					<i class='bx bxs-cog' ></i>
-					<span class="text">Low Stock</span>
+					<span class="text">Inventory</span>
 				</a>
 			</li>
 			<li>
