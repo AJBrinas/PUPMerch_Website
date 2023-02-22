@@ -2,7 +2,9 @@
     <!--Automatic Slideshow-->
     <?php include 'header.php';
  ?>
+     <link rel="stylesheet" href="css/home.css" />
         <link rel="stylesheet" href="css/style.css">
+        
         <script src="js/slideshow.js" defer></script>
             <header class="intro">
                 <div class="intro-slideshow">
