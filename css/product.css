@@ -10,37 +10,17 @@
 
 .image-slider{
     width: 500px;
-    height: 500px;
+    height:500px;
     position: relative;
-    background-image: url('../img/card10.png');
-    background-size: cover;
+} 
+.image-slider .sample{
+    width: 450px;
+    height: 550px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-left: 90px;
 }
 
-.product-images{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background: #fff;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100px;
-    grid-gap: 10px;
-    padding: 10px;
-}
-
-.product-images img{
-    width: 100%;
-    height: 80px;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.product-images img.active{
-    opacity: 0.5;
-}
 .details{
     width: 50%;
 }
@@ -57,9 +37,13 @@
     margin: 15px 0 30px;
 }
 
-.product-price{
+.selectproduct-price{
     font-weight: 700;
     font-size: 30px;
+}
+.selectprice{
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .product-sub-heading{
@@ -89,22 +73,130 @@
     background: #800000;
     color: #fff;
 }
-
-.btn{
+/*confirm button*/
+.btn {
     width: 48%;
     padding: 20px;
     border-radius: 5px;
-    background: none;
+    background: #800000;
     border: 1px solid #800000;
-    color: #383838;
+    color: #fff;
     font-size: 20px;
     cursor: pointer;
     margin: 20px 0;
-    text-transform: capitalize;
+    
+}
+.btn:hover{
+    background: #fff;
+   color: #800000;
 }
 
-.cart-btn{
-    margin-right: 2%;
-    background: #800000;
-    color: #fff;
+.selectproduct-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.selectproduct-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.selectproduct-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 30px;
+    color:black;
+    margin-top: 0px;
+}
+.selectproduct-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    top: 0px;
+}
+.selectproduct-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.selectproduct-brand{
+    font-size: 25px;
+}
+
+.selproduct-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow-x: hidden;
+    opacity: 0.5;
+    margin: 5px 0;
+}
+.selectproduct{
+    position: relative;
+    overflow-x: hidden;
+    padding: 20px 0;
+}
+/*arrow*/
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 5vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    z-index: 8;
+    margin-right: 0px;
+}
+/*arrow*/
+.pre-btn{
+    margin-left: 0px;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.5;
+}
+
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+/*add to cart*/
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.selectproduct-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #e6e4e4;
 }
