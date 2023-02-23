@@ -6,8 +6,7 @@
 
         <!--Heading-->    
         <link rel="stylesheet" href="css/faqs.css">
-        <body style="background-color: #f5f5f5;">
-        <section class="faqs">
+        <section class="faqs" body style="background-color: #f5f5f5;">
             <h2 class="faqs-h2">Frequently Asked Questions</h2>
 
         <!--FAQ 1-->
