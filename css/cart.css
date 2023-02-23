@@ -14,7 +14,7 @@
   margin-bottom: 40px;
   text-align: center;
 }
-
+  /* Table Data cell element */
 td {
   text-align: left;
   padding: 5px;
@@ -27,7 +27,7 @@ td {
   text-align: center;
   border: 1px solid #ccc;
 }
-
+  /* Table header*/
 .cart-table th {
   color: #fff;
   background-color: #800000;
@@ -44,10 +44,16 @@ td {
 }
 
 .cart-table td button {
-  background-color: #8b0000;
+  background-color: #800000;
   color: #fff;
   border: none;
   padding: 5px 10px;
+  cursor: pointer;
+}
+.cart-table td button:hover {
+  background-color: #fff;
+  color: #800000;
+  border: none;
   cursor: pointer;
 }
 
@@ -64,4 +70,9 @@ td {
   padding: 10px;
   cursor: pointer;
   
+}
+.checkout-button:hover {
+  background-color: #fff;
+  color: #0000cd;
+  border:none;
 }
