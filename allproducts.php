@@ -15,14 +15,15 @@
         <h2 class="allproducts-category">All Products</h2>
         <!--Products-->
         <div class="allproducts-container">
+        <!--Product1-->
             <div class="allproducts-card">
                 <div class="allproducts-image">
-                    <img src="img/shirt1.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/mulabayan.php" style="text-decoration:none">
+                    <img src="img/shirt9.jpg" class="allproducts-thumb" alt="">
+                    <a href="product/isko.php" style="text-decoration:none">
                         <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Mula Sayo, Para sa Bayan </h2>
+                    <h2 class="allproducts-brand">isko</h2>
                     <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
 
                 </div>
@@ -32,7 +33,7 @@
                 <div class="allproducts-image">
 
                     <img src="img/shirt2.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/iskoiska.php" style="text-decoration:none">
+                    <a href="product/cats.php" style="text-decoration:none">
                         <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
@@ -47,7 +48,7 @@
                 <div class="allproducts-image">
 
                     <img src="img/shirt3.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/cats.php" style="text-decoration:none">
+                    <a href="product/iskoiska.php" style="text-decoration:none">
                         <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
@@ -113,8 +114,8 @@
             <div class="allproducts-card">
                 <div class="allproducts-image">
 
-                    <img src="img/shirt8.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/isko.php" style="text-decoration:none">
+                    <img src="img/shirt10.jpg" class="allproducts-thumb" alt="">
+                    <a href="product/pupqc.php" style="text-decoration:none">
                     <button class="allproductscard-btn">add to cart</button></a>
                     </button>
                 </div>

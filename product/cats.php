@@ -17,7 +17,7 @@ include '../header.php';
    
     <section class="product-details">
         <div class="image-slider">
-        <img src="../img/card10.png" class="sample" alt=""/>
+        <img src="../img/shirt2.jpg" class="sample" alt=""/>
             </div>  
         <div class="details">
             <h2 class="product-brand">Cats of PUPQC</h2>
@@ -52,8 +52,9 @@ include '../header.php';
         <!--product1-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/shirt1.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to cart</button>
+                    <img src="../img/shirt9.jpg" class="product-thumb" alt="">
+                    <a href="isko.php" style="text-decoration:none">
+                    <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">brand</h2>
@@ -64,8 +65,9 @@ include '../header.php';
          <!--product2-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/shirt2.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to cart</button>
+                    <img src="../img/shirt5.jpg" class="product-thumb" alt="">
+                    <a href="pupian.php" style="text-decoration:none">
+                    <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">brand</h2>
@@ -76,8 +78,9 @@ include '../header.php';
         <!--product3-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/shirt3.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to cart</button>
+                    <img src="../img/shirt4.jpg" class="product-thumb" alt="">
+                    <a href="mulasayo.php" style="text-decoration:none">
+                    <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">brand</h2>
@@ -88,8 +91,9 @@ include '../header.php';
         <!--product4-->
         <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/shirt4.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to cart</button>
+                    <img src="../img/shirt3.jpg" class="product-thumb" alt="">
+                    <a href="iskoiska.php" style="text-decoration:none">
+                    <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">brand</h2>
@@ -100,8 +104,9 @@ include '../header.php';
             <!--product5-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/shirt5.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to cart</button>
+                    <img src="../img/shirt6.jpg" class="product-thumb" alt="">
+                    <a href="iskolar.php" style="text-decoration:none">
+                    <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">brand</h2>
