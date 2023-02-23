@@ -72,10 +72,9 @@
             <!--product5-->
             <div class="allproducts-card">
                 <div class="allproducts-image">
-
                     <img src="img/shirt5.jpg" class="allproducts-thumb" alt="">
-                    <button class="allproductscard-btn">
-                        <a href="product/pupian.php" style="text-decoration:none">add to cart</a></button>
+                        <a href="product/pupian.php" style="text-decoration:none">
+                        <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
                     <h2 class="allproducts-brand">PUPIAN</h2>
@@ -117,7 +116,6 @@
                     <img src="img/shirt10.jpg" class="allproducts-thumb" alt="">
                     <a href="product/pupqc.php" style="text-decoration:none">
                     <button class="allproductscard-btn">add to cart</button></a>
-                    </button>
                 </div>
                 <div class="allproducts-info">
                     <h2 class="allproducts-brand">PUP est 1904</h2>

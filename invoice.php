@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Invoice Template Design</title>
-	<link rel="stylesheet" type="text/css" href="invoice.css">
+	<link rel="stylesheet" type="text/css" href="css/invoice.css">
 </head>
 <body>
 
@@ -11,7 +11,7 @@
 		<div class="header">
 			<div class="logo_invoice_wrap">
 				<div class="logo_sec">
-					<img src="logo.png" alt="code logo" >
+					<img src="img/logo.png" alt="code logo" >
 				</div>
 				<div class="invoice_sec">
 					<p class="invoice bold">INVOICE</p>

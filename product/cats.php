@@ -57,21 +57,21 @@ include '../header.php';
                     <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
-                    <h2 class="selectproduct-brand">brand</h2>
-                    <p class="selproduct-short-des">a short line about the cloth..</p>
+                    <h2 class="selectproduct-brand">Isko</h2>
+                    <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
                     <span class="selectprice">$20</span>
                 </div>
             </div>
          <!--product2-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/shirt5.jpg" class="product-thumb" alt="">
+                    <img src="../img/shirt5.jpg" class="product-thumb" alt="" >
                     <a href="pupian.php" style="text-decoration:none">
                     <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
-                    <h2 class="selectproduct-brand">brand</h2>
-                    <p class="selproduct-short-des">a short line about the cloth..</p>
+                    <h2 class="selectproduct-brand">PUPIAN</h2>
+                    <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
                     <span class="selectprice">$20</span>
                 </div>
             </div>
@@ -83,8 +83,8 @@ include '../header.php';
                     <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
-                    <h2 class="selectproduct-brand">brand</h2>
-                    <p class="selproduct-short-des">a short line about the cloth..</p>
+                    <h2 class="selectproduct-brand">mulasayo</h2>
+                    <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
                     <span class="selectprice">$20</span>
                 </div>
             </div>
@@ -96,8 +96,8 @@ include '../header.php';
                     <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
-                    <h2 class="selectproduct-brand">brand</h2>
-                    <p class="selproduct-short-des">a short line about the cloth..</p>
+                    <h2 class="selectproduct-brand">iskoiska</h2>
+                    <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
                     <span class="selectprice">$20</span>
                 </div>
             </div>
@@ -109,8 +109,8 @@ include '../header.php';
                     <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
-                    <h2 class="selectproduct-brand">brand</h2>
-                    <p class="selproduct-short-des">a short line about the cloth..</p>
+                    <h2 class="selectproduct-brand">iskolar</h2>
+                    <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
                     <span class="selectprice">$20</span>
                 </div>
             </div>
