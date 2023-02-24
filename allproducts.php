@@ -86,26 +86,26 @@
             <div class="allproducts-card">
                 <div class="allproducts-image">
 
-                    <img src="img/shirt6.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/iskolar.php" style="text-decoration:none">
+                    <img src="img/lanyard3.png" class="allproducts-thumb" alt="">
+                    <a href="product/lanyard3.php" style="text-decoration:none">
                         <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Iskolar</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch/p>
+                    <h2 class="allproducts-brand">PUP Light of the Nation</h2>
+                    <p class="allproducts-short-des">PUP Likha Lanyard</p>
 
                 </div>
             </div>
             <!--product7-->
             <div class="allproducts-card">
                 <div class="allproducts-image">
-                    <img src="img/shirt7.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/estpup.php" style="text-decoration:none">
+                    <img src="img/lanyard2.png" class="allproducts-thumb" alt="">
+                    <a href="product/lanyard2.php" style="text-decoration:none">
                     <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
-                    <h2 class="allproducts-brand">PUP est 1904</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
+                    <h2 class="allproducts-brand">Country's First</h2>
+                    <p class="allproducts-short-des">PUP Likha Lanyard</p>
 
                 </div>
             </div>
@@ -113,13 +113,13 @@
             <div class="allproducts-card">
                 <div class="allproducts-image">
 
-                    <img src="img/shirt10.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/pupqc.php" style="text-decoration:none">
+                    <img src="img/lanyard1.png" class="allproducts-thumb" alt="">
+                    <a href="product/lanyard1.php" style="text-decoration:none">
                     <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
-                    <h2 class="allproducts-brand">PUP est 1904</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
+                    <h2 class="allproducts-brand">Mula Sayo Para sa Bayan</h2>
+                    <p class="allproducts-short-des">PUP Likha Lanyard</p>
                 </div>
             </div>
         </div>

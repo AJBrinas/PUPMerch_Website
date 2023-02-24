@@ -23,7 +23,7 @@ include '../header.php';
             <h2 class="product-brand">Isko</h2>
             <p class="product-short-des">Limited Edition Likha Clothing</p>
           
-            <span class="selectproduct-price">$99</span>
+            <span class="selectproduct-price">₱290</span>
             <p class="product-sub-heading">select size</p>
     
             <input type="radio" name="size" value="s" checked hidden id="s-size">
@@ -46,8 +46,6 @@ include '../header.php';
     <!-- product container with slide-->
     <section class="selectproduct">
         <h2 class="selectproduct-category">Products</h2>
-        <button class="pre-btn"><img src="../img/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="../img/arrow.png" alt=""></button>
         <div class="selectproduct-container">
         <!--product1-->
             <div class="selectproduct-card">
@@ -59,7 +57,7 @@ include '../header.php';
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">PUP est</h2>
                     <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
-                    <span class="selectprice">$20</span>
+                    <span class="selectprice">₱290</span>
                 </div>
             </div>
          <!--product2-->
@@ -72,7 +70,7 @@ include '../header.php';
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">Cats of PUPQC</h2>
                     <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
-                    <span class="selectprice">$20</span>
+                    <span class="selectprice">₱230</span>
                 </div>
             </div>
         <!--product3-->
@@ -85,7 +83,7 @@ include '../header.php';
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">Isko at Iska</h2>
                     <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
-                    <span class="selectprice">$20</span>
+                    <span class="selectprice">₱350</span>
                 </div>
             </div>
         <!--product4-->
@@ -98,7 +96,7 @@ include '../header.php';
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">Mula Sayo</h2>
                     <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
-                    <span class="selectprice">$20</span>
+                    <span class="selectprice">₱300</span>
                 </div>
             </div>
             <!--product5-->
@@ -111,7 +109,7 @@ include '../header.php';
                 <div class="selectproduct-info">
                     <h2 class="selectproduct-brand">PUPIAN</h2>
                     <p class="selproduct-short-des">Limited Edition Likha Clothing</p>
-                    <span class="selectprice">$20</span>
+                    <span class="selectprice">₱200</span>
                 </div>
             </div>
             

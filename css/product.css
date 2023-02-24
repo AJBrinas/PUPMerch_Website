@@ -17,7 +17,7 @@
     width: 450px;
     height: 550px;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-left: 90px;
 }
 
@@ -41,6 +41,7 @@
     font-weight: 700;
     font-size: 30px;
 }
+
 .selectprice{
     font-weight: 900;
     font-size: 20px;
@@ -103,7 +104,6 @@
     padding: 0 10vw;
     display: flex;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 .selectproduct-card{
     flex: 0 0 auto;
@@ -127,7 +127,7 @@
 }
 
 .selectproduct-brand{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .selproduct-short-des{
