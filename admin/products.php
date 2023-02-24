@@ -71,37 +71,6 @@
 						<td><a href="addproduct.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
 						<td><a href="addproduct.php"><i class='bx bx-trash' ></i><p>Delete</p></a></td>
 						
-					<button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
-
-					<div id="id01" class="modal">
-					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-					<form class="modal-content" action="/action_page.php">
-						<div class="container">
-						<h1>Delete Account</h1>
-						<p>Are you sure you want to delete your account?</p>
-						
-						<div class="clearfix">
-							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
-						</div>
-						</div>
-					</form>
-					</div>
-
-					<script>
-					// Get the modal
-					var modal = document.getElementById('id01');
-
-					// When the user clicks anywhere outside of the modal, close it
-					window.onclick = function(event) {
-					if (event.target == modal) {
-						modal.style.display = "none";
-					}
-					}
-					</script>
-						
-						
-					
 
 						<tr>
 						<td>
