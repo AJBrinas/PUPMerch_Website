@@ -23,7 +23,7 @@
               <img src="img/andrew.png" />
             </div>
             <h3>Andrew Brinas</h3>
-            <p>Clown</p>
+            <p>Developer</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
@@ -47,7 +47,7 @@
               <img src="img/janna.png" />
             </div>
             <h3>Janna Manuela Enriquez</h3>
-            <p>Panget</p>
+            <p>Developer</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
@@ -166,7 +166,7 @@
         </div>
       </div>
     </section>
-    <script src="js/nav.js"></script>
+     <script src="js/nav.js"></script>
           <script src="js/home.js"></script>
 <?php 
     include 'footer.php';

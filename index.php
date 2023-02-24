@@ -15,20 +15,21 @@
         </header> 
 
 <!--product best selling-->
-        <section class="product">
+<section class="product">
         <body style="background-color: #f5f5f5;">
-            <h2 class="product-category">best selling</h2>
+            <h2 class="product-category">Best Selling</h2>
             <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
             <div class="product-container">
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/card1.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                        <a href="product/pupqc.php" style="text-decoration:none">
+                        <button class="card-btn">add to cart</button></a>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">PUPQC</h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         <span class="price">$20</span>
                     </div>
                 </div>
@@ -36,11 +37,13 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/card2.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                        <a href="product/iskolar.php" style="text-decoration:none">
+                        <button class="card-btn">add to cart</button></a>
+                
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">Iskolar</h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         <span class="price">$20</span>
                     </div>
                 </div>
@@ -48,100 +51,41 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/card3.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                        <a href="product/isko.php" style="text-decoration:none">
+                        <button class="card-btn">add to cart</button></a>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">Isko</h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         <span class="price">$20</span>
                     </div>
                 </div>
             <!--product4-->
                 <div class="product-card">
                     <div class="product-image">
-              
                         <img src="img/card4.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                        <a href="product/iskoiska.php" style="text-decoration:none">
+                        <button class="card-btn">add to cart</button></a>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">Isko at Iska</h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         <span class="price">$20</span>
                     </div>
                 </div>
             <!--product5-->
                 <div class="product-card">
                     <div class="product-image">
-                    
                         <img src="img/card5.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
+                        <a href="product/estpup.php" style="text-decoration:none">
+                        <button class="card-btn">add to cart</button></a>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
+                        <h2 class="product-brand">PUP est 1904</h2>
+                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
                         <span class="price">$20</span>
                     </div>
                 </div>
-                <!--product6-->
-                <div class="product-card">
-                    <div class="product-image">
-                     
-                        <img src="img/card6.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-des">a short line about the cloth..</p>
-                        <span class="price">$20</span>
-                    </div>
-                </div>
-            <!--product7-->
-                <div class="product-card">
-                    <div class="product-image">
-                    <img src="img/card7.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">brand</h2>
-                            <p class="product-short-des">a short line about the cloth..</p>
-                        </div>
-                    </div>
-                <!--product8-->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="img/card8.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">brand</h2>
-                            <p class="product-short-des">a short line about the cloth..</p>
-                            <span class="price">$20</span>
-                        </div>
-                    </div>
-                <!--product9-->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="img/card9.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">brand</h2>
-                            <p class="product-short-des">a short line about the cloth..</p>
-                            <span class="price">$20</span>
-                        </div>
-                    </div>
-                <!--product10-->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="img/card10.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">brand</h2>
-                            <p class="product-short-des">a short line about the cloth..</p>
-                            <span class="price">$20</span>
-                        </div>
-                    </div>
                 </div>
             </section>
         <!--collections-->
@@ -152,13 +96,9 @@
                 <a href="#" class="collection">
                     <img src="img/bigsale.png" alt="">
                 </a>
-<<<<<<< Updated upstream
                 <a href="#" class="collection">
                     <img src="img/comingsoon.png" alt="">
                 </a>
-=======
-                
->>>>>>> Stashed changes
             </section>
 
             <script src="js/nav.js"></script>

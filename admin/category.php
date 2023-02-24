@@ -1,5 +1,6 @@
 <?php 
     include 'sidebar.php';
+	include '../config/functions.php';
 ?>
 
 <main>
@@ -25,7 +26,6 @@
 				<h3>All Categories</h3>
 				<i class='bx bxs-add-to-queue' ></i><p>Add Category </p>
 				<i class='bx bx-filter' ></i>
-				
 			</div>
 			<table>
 				<?php 
