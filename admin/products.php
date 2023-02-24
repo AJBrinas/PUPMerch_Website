@@ -33,6 +33,8 @@
 					<tr>
 						<th>Product ID</th>
 						<th></th>
+						<th> Product Image </th>
+						<th></th>
 						<th>Title</th>
 						<th></th>
 						<th>Price</th>
@@ -43,68 +45,45 @@
 					</tr>
 				</thead>
 				<tbody>
-				<tr>
-						<td>
-							
-							<p>01</p>
-						</td>
+					<tr>
+						<td><p>01</p></td>
 						<td></td>
-						<td>
-						</i><p>sHIRT</p>
-							
-						</td>
+						<td><img src="img/shirt8.jpg" alt="" width="10" height="10"></td>
 						<td></td>
-						<td>
-						
-							<p>1000</p>
-							
-						</td>
+						<td><p>Isko Shirt</p></td>
 						<td></td>
-						<td>
-						
-							<p>200</p>
-							
-						</td>
+						<td><p>1000</p></td>
+						<td></td>
+						<td><p>200</p></td>
 						<td></td>
 						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
 					
-						<td><a href="addproduct.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
+						<td><a href="editproducts.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
+						<td></td>
 						<td><a href="addproduct.php"><i class='bx bx-trash' ></i><p>Delete</p></a></td>
 						
-
+					</tr>
 						<tr>
-						<td>
-							
-							<p>02</p>
-						</td>
+						<td><p>01</p></td>
 						<td></td>
-						<td>
-						</i><p>Shoes</p>
-							
-						</td>
+						<td><img src="img/shirt8.jpg" alt="" width="10" height="10"></td>
 						<td></td>
-						<td>
-						
-							<p>6,000</p>
-							
-						</td>
+						<td><p>Isko Shirt</p></td>
 						<td></td>
-						<td>
-						
-							<p>100</p>
-							
-						</td>
+						<td><p>1000</p></td>
+						<td></td>
+						<td><p>200</p></td>
 						<td></td>
 						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
-						<td><a href="addproduct.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
+						<td><a href="editproducts.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
+						<td></td>
 						<td><a href="addproduct.php"><i class='bx bx-trash' ></i><p>Delete</p></a></td>
-					
+					</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>
 <script src="js/script.js"></script>
-
 
 </body>
 </html>

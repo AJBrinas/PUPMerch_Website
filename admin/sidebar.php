@@ -44,7 +44,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="Users.php">
 					<i class='bx bxs-group' ></i>
 					<span class="text">Users</span>
 				</a>

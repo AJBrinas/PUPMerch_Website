@@ -173,9 +173,10 @@ body {
 	font-size: 13px;
 	text-align: left;
 	border-bottom: 2px solid var(--grey);
+	padding: 20px, 0;
 }
 #content main .table-data .order table td {
-	padding: 16px 0;
+	padding: 20px 0;
 }
 #content main .table-data .order table tr td:first-child {
 	display: flex;
