@@ -1,44 +1,44 @@
 <?php 
-include '../config/connect.php';
+// include '../config/connect.php';
 
-if(isset($_POST['submit'])){
-    $pcat = $_POST['product_cat'];
-    $title = $_POST['product_title'];
-    $price = $_POST['product_price'];
-    $desc = $_POST['product_desc'];
-    $image = $_FILES['product_image'];
-    $price = $_POST['product_price'];
-    $qty = $_POST['product_qty'];
-    $kword = $_POST['product_keywords'];
-    $stat = $_POST['product_status'];
+// if(isset($_POST['submit'])){
+//     $pcat = $_POST['product_cat'];
+//     $title = $_POST['product_title'];
+//     $price = $_POST['product_price'];
+//     $desc = $_POST['product_desc'];
+//     $image = $_FILES['product_image'];
+//     $price = $_POST['product_price'];
+//     $qty = $_POST['product_qty'];
+//     $kword = $_POST['product_keywords'];
+//     $stat = $_POST['product_status'];
 
-    //echo implode(",",$image);
-    // print_r($image); //to print array use this; if not warning:array converting to string
-    //picture
-    $image_name = $image['name'];
-    $img_type= $image['type'];
-    $tmp_name = $image['tmp_name'];
-    $img_type= $image['type'];
-    $img_error = $image['error'];
+//     //echo implode(",",$image);
+//     // print_r($image); //to print array use this; if not warning:array converting to string
+//     //picture
+//     $image_name = $image['name'];
+//     $img_type= $image['type'];
+//     $tmp_name = $image['tmp_name'];
+//     $img_type= $image['type'];
+//     $img_error = $image['error'];
 
-	$filename_separate = explode('.',$image_name); //separating image name and the file type
-    $file_ext = strtolower($filename_separate[1]); //getting the file type in array 1; in array [0], img name is stored
+// 	$filename_separate = explode('.',$image_name); //separating image name and the file type
+//     $file_ext = strtolower($filename_separate[1]); //getting the file type in array 1; in array [0], img name is stored
 
-    $allowed_ext = array('jpeg','png','img', 'jpg');
-    if(in_array($file_ext, $allowed_ext)){
-        $upload_image = '../likha_products/'.$image_name;
-        //print_r($upload_image);
-        move_uploaded_file($tmp_name, $upload_image );
-        $tsql = "INSERT INTO dbo.products (product_cat,product_title,  product_price, product_desc, product_image, product_price,product_qty,product_keywords) VALUES (?,?,?,?,?,?,?,?)";
-        $param = array($title, $upload_image);
-        $result = sqlsrv_query($conn, $tsql, $param);
-        if($result){
-            echo "inserted";
-        }else{
-            die( print_r(sqlsrv_errors(), true));
-        }
-    }
-}
+//     $allowed_ext = array('jpeg','png','img', 'jpg');
+//     if(in_array($file_ext, $allowed_ext)){
+//         $upload_image = '../likha_products/'.$image_name;
+//         //print_r($upload_image);
+//         move_uploaded_file($tmp_name, $upload_image );
+//         $tsql = "INSERT INTO dbo.products (product_cat,product_title,  product_price, product_desc, product_image, product_price,product_qty,product_keywords) VALUES (?,?,?,?,?,?,?,?)";
+//         $param = array($title, $upload_image);
+//         $result = sqlsrv_query($conn, $tsql, $param);
+//         if($result){
+//             echo "inserted";
+//         }else{
+//             die( print_r(sqlsrv_errors(), true));
+//         }
+//     }
+// }
 
 include 'sidebar.php' 
 ?>

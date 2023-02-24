@@ -68,7 +68,17 @@
 
     ---- Dumping data for table prod
     INSERT INTO products (product_id,product_cat,product_title,product_price,product_desc,product_image,product_qty,product_keywords,product_status) values
-    (1, 1, 'Mula sayo Para sa Bayan', 200, 'Tshirt po ito', 'img', 30, 'Mula', 1);
+    (1, 1, 'Cats of PUP', 230, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'cats', 0),
+    (2, 1, 'PUP est', 290, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUP est', 0),
+    (3, 1, 'isko', 250, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'isko', 0),
+    (4, 1, 'isko at iska', 350, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'isko iska', 0),
+    (5, 1, 'iskolar', 300, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'iskolar', 0),
+    (6, 1, 'Mula Sayo', 300, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'Mula Sayo', 0),
+    (7, 1, 'PUPian', 200, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUPian', 0),
+    (8, 1, 'PUPQC', 350, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUPQC', 0),
+    (9, 2, 'Mula Sayo Para sa Bayan', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard1', 0),
+    (10, 2, 'Countrys First ', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard2', 0),
+    (11, 2, 'PUP Light of the Nation', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard3', 0);
 
     ----Creating table prod-cart   
     CREATE TABLE product_cart (
