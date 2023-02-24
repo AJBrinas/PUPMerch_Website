@@ -63,13 +63,12 @@
     product_image text NOT NULL,
     product_qty int NOT NULL DEFAULT 0,
     product_keywords text DEFAULT NULL,
-    product_views int DEFAULT 0,
     product_status int NOT NULL DEFAULT 1
     );
 
     ---- Dumping data for table prod
-    INSERT INTO products (product_id,product_cat,product_title,product_price,product_desc,product_image,product_qty,product_keywords,product_views,product_status) values
-    (1, 0001, 1, 'Mula sayo Para sa Bayan', 200, 'Tshirt po ito', 'img', 30, 'Mula', 3, 1)
+    INSERT INTO products (product_id,product_cat,product_title,product_price,product_desc,product_image,product_qty,product_keywords,product_status) values
+    (1, 1, 'Mula sayo Para sa Bayan', 200, 'Tshirt po ito', 'img', 30, 'Mula', 1);
 
     ----Creating table prod-cart   
     CREATE TABLE product_cart (
