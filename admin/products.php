@@ -74,13 +74,13 @@
 						<td><p>200</p></td>
 						<td></td>
 						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
-<<<<<<< HEAD
+
 						
 						<td><a href="editproducts.php"><span class="status process">Edit</span></td>
 						<td><span class="status completed"onclick="confirmation()">Delete</span></td>
 					
 					</tr>
->>>>>>> 9a47366575b693a290c2c7b25f9fb4bc01ef3af7
+
 				</tbody>
 			</table>
 		</div>

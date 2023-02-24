@@ -28,4 +28,6 @@
 	color: var(--black);
     padding-left: 100;
 }
-
+.td{
+	text-align: center;
+  }
