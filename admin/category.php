@@ -1,12 +1,7 @@
 <?php 
     include 'sidebar.php';
-<<<<<<< Updated upstream
-?>
-=======
-	include '../config/functions.php';
 ?>
 
->>>>>>> Stashed changes
 <main>
 	<div class="head-title">
 		<div class="left">

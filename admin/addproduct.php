@@ -1,67 +1,51 @@
-<?php include 'sidebar.php' ?>
+<?php 
+    include 'sidebar.php';
+?>
 
-        <link rel="stylesheet" href="css/addprod.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-<body>
-    <div class="addprod">
-        
-    <div class="admin-content-container">
-        <h2 class="admin-heading">Add New Product</h2>
-        <form id="createProduct" class="add-post-form row">
-            <div class="col-md-7">
-                <div class="form-group">
-                    <label for="">Product Title</label>
-                    <input type="text" class="form-control product_title" name="product_title" placeholder="Product Title" requried/>
-                </div>
-                <div class="form-group category">
-                    <label for="">Product Category</label>
-                   
-                    <select class="options" name="product_cat">
-                        <option value="" selected disabled>Select Category</option>
-                        <option value="1" >Option 1</option>
-                        <option value="2" >Option 2</option>
-                        <option value="3" >Option 3</option>
-                       
-                    </select>
-                </div>
-               
-               
-                <div class="form-group">
-                    <label for="">Product Description</label>
-                    <textarea class="form-control product_description" name="product_desc" rows="8" cols="80" requried></textarea>
-                </div>
-                <div class="show-error"></div>
-            </div>
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label for="">Featured Image</label>
-                    <input type="file" class="product_image" requried name="featured_img">
-                    <img id="image" src="" width="150px"/>
-                </div>
-                <div class="form-group">
-                    <label for="">Product Price</label>
-                    <input type="text" class="form-control product_price" name="product_price" requried value="">
-                </div>
-                <div class="form-group">
-                    <label for="">Available Quantity</label>
-                    <input type="number" class="form-control product_qty" name="product_qty" requried value="">
-                </div>
-                <div class="form-group">
-                    <label>Status</label>
-                    <select class="form-control product_status" name="product_status">
-                        <option selected value="1">Publish</option>
-                        <option value="0">Draft</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn-add-new" name="submit" value="Submit">
-                </div>
-            </div>
-        </form>
-    </div>
-    </div>
-</body>
-
-        
+<main>
+    <link rel="stylesheet" href="css/addproducts.css">
+			<div class="head-title">
+				<div class="left">
+					<h1>Add New Products</h1>
+				</div>
+			</div>
     
-</html>
+    <div>
+    <form action="/action_page.php">
+
+    <label for="ProductTitle">Product Title</label>
+    <input type="text" id="ProdT" name="ProdTitle" placeholder="Ex: Isko Shirt...">
+
+    <label for="ProductCategory">Product Category</label>
+        <select id="ProdC" name="ProdCategory">
+        <option value="" selected disabled>Select Category</option>
+        <option value="1">Shirt</option>
+        <option value="2">Lanyard</option>
+        <option value="3">Tote Bag</option>
+    </select>
+
+    <label for="ProductPrice">Product Price</label>
+    <input type="text" id="ProdP" name="ProdPrice" placeholder="">
+
+    <label for="ProductQuantity">Product Quantity</label>
+    <input type="text" id="ProdQ" name="ProdQuantity" placeholder="">
+
+    <label for="ProductDescription">Product Description</label>
+    <textarea id="ProductD" name="ProdDescription" placeholder="Write something.." style="height:200px"></textarea>
+
+    <label for="">Featured Image</label>
+        <input type="file" class="product_image" requried name="featured_img">
+        
+    <div>
+    <label for="ProductStatus">Status </label>
+        <select id="product_status" name="product_status">
+        <option value="X" selected disabled>Select Status</option>
+        <option selected value="1">Publish</option>
+        <option value="0">Draft</option>
+    </select>
+    </div>
+    <div>
+    <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>

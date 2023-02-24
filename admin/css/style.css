@@ -131,10 +131,6 @@ body {
 	color: var(--dark);	
 }
 
-
-
-
-
 #content main .table-data {
 	display: flex;
 	flex-wrap: wrap;

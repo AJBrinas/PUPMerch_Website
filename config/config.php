@@ -47,65 +47,8 @@ class Database
     {
 
     }
-
-    public function insert()
-    {
-        $database = new Database;
-        $db = $database->connections();
-        $sql = "INSERT INTO $table ()";
-    }
+    
 }
-
-
-// $DB = new Database();
-// $DB->connections();
-// $query = "SELECT * FROM categories";
-// $data = $DB->c_list($query);
-//-----------------------------------------------------------------------
-<<<<<<< Updated upstream
-    // $db_host = "ANDREW\SQLEXPRESS"; // Server Name
-    // $user = "";
-    // $pass = "";
-    // $db_name = "likhamerch_db"; // Database Name
-
-    // try{
-    //     $connect = new PDO("sqlsrv:Server=$db_host;Database=$db_name", $user, $pass); // PDO dll Required
-    //     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //     // echo 'Fuck this';
-    // } catch (PDOException $e){
-    //     die("Unsuccessful Connection: ".$e->getMessage());
-    // }
-=======
-    $db_host = "DESKTOP-GS1C0IK\SQLEXPRESS"; // Server Name
-    $user = "";
-    $pass = "";
-    $db_name = "likhamerch_db"; // Database Name
-
-    try{
-        $connect = new PDO("sqlsrv:Server=$db_host;Database=$db_name", $user, $pass); // PDO dll Required
-        $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'Fuck this';
-    } catch (PDOException $e){
-        die("Unsuccessful Connection: ".$e->getMessage());
-    }
->>>>>>> Stashed changes
-
-    //-------------------------------------------------------------------------
-    // require_once 'config.php';
-
-
-    // if (isset($_POST['userSubmit'])){
-    //     $fname = $_POST['Fname'];
-    //     $cnt = $_POST['country'];
-
-    //     $sql = "INSERT INTO Members (FirstName, Country) VALUES (?,?);";
-    //     $sd = array(&$fname, &$cnt);
-    //     $query = $connect->prepare($sql);
-    //     $insert = $query->execute($sd);
-    //     }
-
-
-    // header('location:index.php?Success');
 
 
 ?>
