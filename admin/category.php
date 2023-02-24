@@ -29,17 +29,19 @@
 				<i class='bx bx-filter' ></i>
 				
 			</div>
+			
 			<table>
 				<?php 
 					// $database = new Database;
 					// $database->select('categories', '*');
 					// $result = $database->getResults();
 				?>
-				
+				<thead>
 					<tr>
 						<th>Title</th>
 						<th>Actions</th>
 					</tr>
+				</thead>
 				<tbody>
 					<?php 
 						// if (!empty($result))
@@ -74,6 +76,7 @@
 					?>
 				</tbody>
 			</table>
+			
 		</div>
 	</div>
 	<script>

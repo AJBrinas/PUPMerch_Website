@@ -3,7 +3,7 @@
 ?>
 
 <main>
-    <link rel="stylesheet" href="css/orders.css">
+    
 			<div class="head-title">
 				<div class="left">
 					<h1>Orders</h1>

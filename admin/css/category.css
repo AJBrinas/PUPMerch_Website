@@ -1,11 +1,11 @@
-#content main {
+/* #content main {
 	width: 100%;
 	padding: 36px 24px;
 	font-family: var(--poppins);
 	max-height: calc(100vh - 56px);
 	overflow-y: auto;
-}
-
+} */
+/* 
 #content main .CategoryContainer {
     display: flex;
 	align-items: center;
@@ -19,15 +19,15 @@
 	font-weight: 600;
 	margin-bottom: 10px;
 	color: var(--black);
-}
+} */
 
-#content main .add-new-category{
+/* #content main .add-new-category{
     font-size: 36px;
 	font-weight: 600;
 	margin-bottom: 10px;
 	color: var(--black);
     padding-left: 100;
-}
-.td{
-	text-align: center;
-  }
+} */
+/* .table-data{
+	align-items: center;
+} */
