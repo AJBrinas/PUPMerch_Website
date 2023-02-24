@@ -23,8 +23,7 @@ include '../header.php';
             <h2 class="product-brand">Country's First Polytechnic University</h2>
             <p class="product-short-des">PUP Likha Lanyard</p>
           
-            <span class="selectproduct-price">₱30</span>
-            <p class="product-sub-heading">select size</p>
+            <span class="selectproduct-price">₱30</span><br>
             <a href="../cart.php" style="text-decoration:none">
             <button class="btn confirm-btn">Confirm</button></a>
           
