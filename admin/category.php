@@ -57,6 +57,7 @@
 						<!-- <td><span class="status process">Edit</span><span class="status completed">Delete</span></td> -->
 						<td><i class='bx bxs-edit' > <span class="status process">Edit</span></i></td>
 						<td><i class='bx bx-trash' > <span class="status completed">Delete</span></i></td>
+						
 					</tr>
 					<?php 
 						}} else {
@@ -71,6 +72,7 @@
 			</table>
 		</div>
 	</div>
+
 	
 <script src="js/script.js"></script>
 

@@ -87,13 +87,23 @@
 						</td>
 						<td></td>
 						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
-						<td><i class='bx bxs-edit' ></i><i class='bx bx-trash' ></i></td>
+						 <td><input type="button" class="status_process" value="EDIT"></i></td>
+						<td><i class='bx bx-trash' > <span class="status completed" onclick="confirmation()">Delete</span></i></td>
 					
 					
 				</tbody>
 			</table>
 		</div>
 	</div>
+	<script>
+          function confirmation(){
+            var result = confirm("Are you sure to delete?");
+            if(result){
+              console.log("Deleted")
+            }
+          }
+        </script>
+	
 <script src="js/script.js"></script>
 
 
