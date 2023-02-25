@@ -45,7 +45,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="Users.php">
 					<i class='bx bxs-group' ></i>
 					<span class="text">Users</span>
 				</a>
@@ -92,7 +92,7 @@
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
-
+			<p><strong> Hi, Admin! </strong></p>
 			</a>
 			<a href="img/people.png" class="profile">
 				<img src="img/people.png">

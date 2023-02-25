@@ -10,11 +10,13 @@
           <nav class="navbar">
             <div class="nav-items">
                 <div class="search">
-                    <input type="text" class="search-box" placeholder="search brand, product">
-                    <button class="search-btn">
-                        <img src="img/search.png" width="35%" height="100%" alt="">
-                    </button>
-                </div>
+                <label for="search-bar"></label>
+                <input type="text" class="search-box" id="search-bar" placeholder="search brand, product"/>
+                <button onclick="search()" class="search-btn">
+                <img src="img/search.png" width="35%" height="100%" alt="">
+                </button>                  
+                <script src="js/search.js"></script> 
+            </div>
 
             <div class="dropdown">           
             <button class="dropbtn">

@@ -50,8 +50,8 @@
           <div class="footer-widget">
             <h6>Products</h6>
             <ul class="links">
-              <li><a href="allproducts.php">T-Shirts</a></li>
-              <li><a href="#">Lanyards</a></li>
+              <li><a href="product/cats.php">T-Shirts</a></li>
+              <li><a href="product/lanyard1.php">Lanyards</a></li>
               <li><a href="#">Jacket</a></li>
               <li><a href="#">Notebook</a></li>
               <li><a href="#">Tumbler</a></li>
