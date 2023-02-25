@@ -28,11 +28,11 @@
 				<i class='bx bx-filter' ></i>
 			</div>
 			<table>
-				<?php 
-					$database = new Database;
-					$database->select('categories', '*');
-					$result = $database->getResults();
-				?>
+//				<?php 
+//					$database = new Database;
+//					$database->select('categories', '*');
+//					$result = $database->getResults();
+				?> 
 				<thead>
 					<tr>
 						<th>Title</th>
@@ -42,16 +42,16 @@
 				</thead>
 				<tbody>
 					<?php 
-						if (!empty($result))
-						{
-							$count = 0;
-							foreach($result as $row)
-							{ $count++;
-					?>
+//						if (!empty($result))
+//						{
+//							$count = 0;
+//							foreach($result as $row)
+//							{ $count++;
+//					?>
 					<tr>
 						<td>
-							<i class='bx bx-store-alt'></i>
-							<?php echo $row['cat_title']?>
+						<i class='bx bx-store-alt'></i>
+						<?php //echo $row['cat_title']?>
 						</td>
 						<td></td>
 						<!-- <td><span class="status process">Edit</span><span class="status completed">Delete</span></td> -->
@@ -60,14 +60,14 @@
 						
 					</tr>
 					<?php 
-						}} else {
+						// }} else {
 						?>
 						<tr>
 							<td>
 								''----The table is Blank.----''
 							</td>
 						</tr>
-						<?php }?>
+						<?php // }?>
 				</tbody>
 			</table>
 		</div>
