@@ -1,44 +1,36 @@
 
-
-  main{
-    width: 100%;
-    padding: 36px 24px;
-    font-family: var(--poppins);
-    max-height: calc(100vh - 56px);
-    overflow-y: auto;
-  }
-  
-   .head-title {
+  .head-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
     grid-gap: 16px;
     flex-wrap: wrap;
   }
-   .head-title .left h1 {
+  .head-title.left h1 {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 10px;
     color: var(--dark);
   }
-   .head-title .left .breadcrumb {
+  .head-title.left .breadcrumb {
     display: flex;
     align-items: center;
     grid-gap: 16px;
   }
-   .head-title .left .breadcrumb li {
+  .head-title.left .breadcrumb li {
     color: var(--dark);
   }
-   .head-title .left .breadcrumb li a {
+  .head-title.left .breadcrumb li a {
     color: var(--dark-grey);
     pointer-events: none;
   }
-   .head-title .left .breadcrumb li a.active {
+  .head-title.left .breadcrumb li a.active {
     color: var(--blue);
     pointer-events: unset;
   }
-  
-.orders-table {
+ 
+
+  .products-table {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 24px;
@@ -47,58 +39,84 @@
 	width: 85%;
 	color: var(--dark);
 }
-.orders-table > div {
+ .products-table > div {
 	border-radius: 20px;
 	background: var(--light);
 	padding: 24px;
 	overflow-x: auto;
 }
-.orders-table .head {
+ .products-table .head {
 	display: flex;
 	align-items: center;
 	grid-gap: 16px;
 	margin-bottom: 24px;
 }
-.orders-table .head h3 {
+ .products-table .head h3 {
 	margin-right: auto;
 	font-size: 24px;
 	font-weight: 600;
 }
-.orders-table .head .bx {
+ .products-table .head .bx {
 	cursor: pointer;
 }
 
-.orders-table .order {
+ .products-table .order {
 	flex-grow: 1;
 	flex-basis: 300px;
 }
-.orders-table .order table {
+ .products-table .order table {
 	width: 70%;
 	border-collapse: collapse;
 }
-.orders-table .order table th {
+/*products column*/
+ .products-table .order table th {
 	padding-bottom: 12px;
-	font-size: 15px;
+	font-size: 14px;
 	text-align: center;
 	border-bottom: 2px solid var(--grey);
-	padding: 20px, 0;
+	padding: 25px, 0;
+    padding-right:60px;
 }
-.orders-table .order table td {
+ .products-table .order table td {
 	padding: 20px 0;
-	align-items: center;
+    
+
 }
-.orders-table .order table tr td:first-child {
+.products-table .order table tbody td p{
+    padding-left: 2px;
+}
+ .products-table .order table tr td:first-child {
 	display: flex;
 	align-items: center;
-	grid-gap: 12px;
-	padding-left: 10px;
+	grid-gap: 20px;
 }
-.orders-table .order table td img {
+ .products-table .order table td img {
 	width: 36px;
 	height: 36px;
 	border-radius: 50%;
 	object-fit: cover;
 }
-.orders-table .order table tbody tr:hover {
+
+ .products-table .order table tbody tr:hover {
 	background: var(--grey);
 }
+/*laman ng buttons at size ng buttons*/
+ .products-table .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 40px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 700;
+}
+ /*buttons*/
+.status.edit {
+	/* background: var(--blue); */
+	background: blue;
+	font-size: 10px;
+    
+}
+.status.delete {
+	background:#FFC300 ;
+	font-size:10px;
+	
+} 

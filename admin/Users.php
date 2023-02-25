@@ -4,6 +4,7 @@ include 'sidebar.php'
 ?>
 
 <main>
+<link rel="stylesheet" href="css/users.css">
 			<div class="head-title">
 				<div class="left">
 					<h1>ALL USERS</h1>
@@ -20,7 +21,7 @@ include 'sidebar.php'
 			</div>
 
 
-			<div class="table-data">
+			<div class="users-table">
 				<div class="order">
 					<div class="head">
 						<h3>USERS</h3>
@@ -28,7 +29,7 @@ include 'sidebar.php'
 						<i class='bx bx-filter' ></i>
 						
 					</div>
-					<table>
+					<table  style="width:100%">
 						<thead>
 							<tr>
                              <th>User ID</th>
@@ -71,7 +72,8 @@ include 'sidebar.php'
                                
 
 								<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
-								<td><i class='bx bxs-edit' ></i><i class='bx bx-trash' ></i></td>
+								<td><a href="editcategory.php"><span class="status edit">Edit</span></td>
+								<td><span class="status delete"onclick="confirmation()">Delete</span></td>
 							
 
 								<tr>
@@ -98,9 +100,22 @@ include 'sidebar.php'
 								</td>
 								<td></td>
 								<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
-								<td><i class='bx bxs-edit' ></i><i class='bx bx-trash' ></i></td>
-							
-							
-						</tbody>
+								<td><a href="editcategory.php"><span class="status edit">Edit</span></td>
+						<td><span class="status delete"onclick="confirmation()">Delete</span></td>	
+					</tr>	
+					</tbody>
 					</table>
 				</div>
+</div>
+				<script>
+          function confirmation(){
+            var result = confirm("Are you sure to delete?");
+            if(result){
+              console.log("Deleted")
+            }
+          }
+        </script>
+		<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 ?>
 
 <main>
-    <link rel="stylesheet" href="css/orders.css">
+    <link rel="stylesheet" href="css/inventory.css">
 			<div class="head-title">
 				<div class="left">
 					<h1>DELISTING PRODUCT</h1>
@@ -20,7 +20,7 @@
 			</div>
 
 
-			<div class="table-data">
+			<div class="inventory-table">
 				<div class="order">
 					<div class="head">
 						<h3>Delisting Product</h3>

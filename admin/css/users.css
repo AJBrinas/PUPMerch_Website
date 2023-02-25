@@ -1,4 +1,4 @@
- main{
+main{
 	width: 100%;
 	padding: 36px 24px;
 	font-family: var(--poppins);
@@ -36,91 +36,81 @@
 	pointer-events: unset;
 }
 
-  .th {
-    border:7px solid black;
-    text-align: left;
-    
-  }
-
- .inventory-table {
+.users-table {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 24px;
 	margin-top: 24px;
-	margin-left: 120px;
-	width: 85%;
+	margin-left: 130px;
+	width: 80%;
 	color: var(--dark);
 }
- .inventory-table > div {
+ .users-table > div {
 	border-radius: 20px;
 	background: var(--light);
 	padding: 24px;
 	overflow-x: auto;
 }
- .inventory-table .head {
+ .users-table .head {
 	display: flex;
 	align-items: center;
 	grid-gap: 16px;
 	margin-bottom: 24px;
 }
- .inventory-table .head h3 {
+ .users-table .head h3 {
 	margin-right: auto;
 	font-size: 24px;
 	font-weight: 600;
 }
- .inventory-table .head .bx {
+ .users-table .head .bx {
 	cursor: pointer;
 }
 
- .inventory-table .order {
+ .users-table .order {
 	flex-grow: 1;
 	flex-basis: 300px;
 }
- .inventory-table .order table {
+ .users-table .order table {
 	width: 70%;
 	border-collapse: collapse;
 }
- .inventory-table .order table th {
+/*Users*/
+ .users-table .order table th {
 	padding-bottom: 12px;
-	font-size: 15px;
-	text-align: left;
+	font-size: 14px;
+	text-align: center;
 	border-bottom: 2px solid var(--grey);
 	padding: 20px, 0;
+	padding-right: 70px;
 }
- .inventory-table .order table td {
+ .users-table .order table td {
 	padding: 20px 0;
 }
- .inventory-table .order table tr td:first-child {
+ .users-table .order table tr td:first-child {
 	display: flex;
 	align-items: center;
 	grid-gap: 12px;
 	padding-left: 6px;
 }
- .inventory-table .order table td img {
-	width: 36px;
-	height: 36px;
-	border-radius: 50%;
-	object-fit: cover;
-}
- .inventory-table .order table tbody tr:hover {
-	background: var(--grey);
-}
  
- .inventory-table .todo {
-	flex-grow: 1;
-	flex-basis: 300px;
-}
- .inventory-table .todo .todo-list {
-	width: 100%;
-}
- .inventory-table .todo .todo-list li {
-	width: 100%;
-	margin-bottom: 16px;
+ .users-table .order table tbody tr:hover {
 	background: var(--grey);
-	border-radius: 10px;
-	padding: 14px 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
 }
+ .users-table .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 40px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 500;
+}
+/*buttons*/
+.status.edit {
+	/* background: var(--blue); */
+	background: blue;
+	font-size: 10px;
+}
+.status.delete {
+	background:#FFC300 ;
+	font-size:10px;
+	
+} 

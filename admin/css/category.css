@@ -1,33 +1,77 @@
-/* #content main {
-	width: 100%;
-	padding: 36px 24px;
-	font-family: var(--poppins);
-	max-height: calc(100vh - 56px);
-	overflow-y: auto;
-} */
-/* 
-#content main .CategoryContainer {
-    display: flex;
-	align-items: center;
-	justify-content: space-between;
-	grid-gap: 16px;
+
+.categorytable {
+	display: flex;
 	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	margin-left: 150px;
+	width: 80%;
+	color: var(--dark);
+}
+.categorytable > div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
 }
 
-#content main .CategoryContainer .Category h1 {
-    font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	color: var(--black);
-} */
-
-/* #content main .add-new-category{
-    font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	color: var(--black);
-    padding-left: 100;
-} */
-/* .table-data{
+.categorytable .head {
+	display: flex;
 	align-items: center;
-} */
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+ .categorytable .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+ .categorytable .head .bx {
+	cursor: pointer;
+}
+
+.categorytable .order {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+ .categorytable .order table {
+	width: 70%;
+	border-collapse: collapse;
+}
+/*Title, Actions*/
+ .categorytable .order table th {
+	padding-bottom: 12px;
+	font-size: 17px;
+	text-align: center;
+	border-bottom: 2px solid var(--grey);
+	padding: 20px, 0;
+	padding-left: 50px;
+	padding-right: 120px;
+}
+ .categorytable .order table td {
+	padding: 20px 0;
+}
+
+.categorytable .order table tbody tr:hover {
+	background: var(--grey);
+}
+/*laman ng buttons at size ng buttons*/
+.categorytable .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 40px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 500;
+
+}
+/*buttons*/
+.status.edit {
+	/* background: var(--blue); */
+	background: blue;
+	font-size: 10px;
+}
+.status.delete {
+	background:#FFC300 ;
+	font-size:10px;
+	
+} 
