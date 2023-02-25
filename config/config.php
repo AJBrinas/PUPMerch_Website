@@ -5,8 +5,9 @@ use LDAP\Result;
 class Database 
 {
     // Configuration 
-
-    private $db_host = "sqlsrv:Server=ANDREW\SQLExpress;Database=likhamerch_db"; // Server Name
+    
+    // Server Name
+    private $db_host = "sqlsrv:Server=ANDREW\SQLExpress;Database=likhamerch_db";
     private $user = "";
     private $pass = "";
     private $c = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
@@ -43,48 +44,25 @@ class Database
         return $values;
     }
 
-    public function update()
+    public function addCategory($categoryName)
     {
-
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "INSERT INTO categories (cat_title)
+                VALUES ('$categoryName')";
+        $query = $db->query($sql);
     }
     
+    public function editCategory($categoryID, $categoryName)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "UPDATE categories 
+                SET cat_title = ?
+                WHERE cat_id = ?";
+        $asql = array(&$categoryName, &$categoryID);
+        $query = $db->prepare($sql);
+        $asql = $query->execute($asql);
+    }
 }
-
-
-// $DB = new Database();
-// $DB->connections();
-// $query = "SELECT * FROM categories";
-// $data = $DB->c_list($query);
-//-----------------------------------------------------------------------
-    // $db_host = "DESKTOP-GS1C0IK\SQLEXPRESS"; // Server Name
-    // $user = "";
-    // $pass = "";
-    // $db_name = "likhamerch_db"; // Database Name
-
-    // try{
-    //     $connect = new PDO("sqlsrv:Server=$db_host;Database=$db_name", $user, $pass); // PDO dll Required
-    //     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //     echo 'Fuck this';
-    // } catch (PDOException $e){
-    //     die("Unsuccessful Connection: ".$e->getMessage());
-    // }
-
-    //-------------------------------------------------------------------------
-    // require_once 'config.php';
-
-
-    // if (isset($_POST['userSubmit'])){
-    //     $fname = $_POST['Fname'];
-    //     $cnt = $_POST['country'];
-
-    //     $sql = "INSERT INTO Members (FirstName, Country) VALUES (?,?);";
-    //     $sd = array(&$fname, &$cnt);
-    //     $query = $connect->prepare($sql);
-    //     $insert = $query->execute($sd);
-    //     }
-
-
-    // header('location:index.php?Success');
-
-
 ?>

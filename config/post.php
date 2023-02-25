@@ -54,25 +54,31 @@ if(isset($_POST['submit']))
 
         move_uploaded_file($tmp_name, $move_image);
         $db = new Database;
-        $db->insert($id, $title, $img_name);
+        // $db->insert($id, $title, $img_name);
         header('Location: ../products.php');
     }
 
 }
-echo '<br />Hatdog ko maliit';
 
-
-// here is the config function based on samp_tb
-
-public function insert($id, $title, $image)
+// Adding Category
+if(isset($_POST['addCategory'])) 
 {
-    $database = new Database;
-    $db = $database->connections();
-    $sql = "INSERT INTO samp_tb (img_id, img_name, img_img)
-            VALUES ($id, '$title', '$image')";
-    $query = $db->query($sql);
-    
+    $categoryName = $_POST['add_catname'];
+    echo $categoryName;
+        $db = new Database;
+        $db->addCategory($categoryName);
+        header('Location: ../admin/category.php');
+}
 
+// Editing Category
+if (isset($_POST['editCategory']))
+{
+    $categoryName = $_POST['edit_catname'];
+    $categoryID = $_POST['categoryID'];
+    echo $categoryName;
+        $db = new Database;
+        $db->editCategory($categoryID, $categoryName);
+        header('Location: ../admin/category.php');
 }
 
 

@@ -1,6 +1,5 @@
 <?php 
     include 'sidebar.php';
-	include '../config/functions.php';
 ?>
 
 <main>
@@ -27,14 +26,13 @@
 				<h3>All Categories</h3>
 				<a href="addcategory.php"><i class='bx bxs-add-to-queue' ></i><p>Add Category</p></a>
 				<i class='bx bx-filter' ></i>
-				
 			</div>
 			
 			<table>
 				<?php 
-					// $database = new Database;
-					// $database->select('categories', '*');
-					// $result = $database->getResults();
+					$database = new Database;
+					$database->select('categories', '*');
+					$result = $database->getResults();
 				?>
 				<thead>
 					<tr>
@@ -42,43 +40,39 @@
 						<th>Actions</th>
 					</tr>
 				</thead>
+
 				<tbody>
 					<?php 
-						// if (!empty($result))
-						// {
-						// 	$count = 0;
-						// 	foreach($result as $row)
-						// 	{ $count++;
+						if (!empty($result))
+						{
+							$count = 0;
+							foreach($result as $row)
+							{ $count++;
 					?>
 					<tr>
 						<td>
 							<i class='bx bx-store-alt'></i>
-							<?php 
-							// echo $row['cat_title']
-							?>
+							<?php echo $row['cat_title'] ?>
 						</td>
 						<td></td>
-						<!-- <td><span class="status process">Edit</span><span class="status completed">Delete</span></td> -->
-						<td><a href="editcategory.php"><span class="status process">Edit</span></td>
-						<td><span class="status completed"onclick="confirmation()">Delete</span></td>
-					
+						<td><a href="editcategory.php?id=<?php echo $row['cat_id'] ?>"><span class="status process">Edit</span></td>
+						<td><span class="status completed">
+						<a href="delete.php?action_type=delete&id=<?php echo $row['cat_id'];?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
+						</span></td>
 					</tr>
-					<?php 
-						// }} else {
-						?>
-						<tr>
-							<td>
-								
-							</td>
-						</tr>
-						<?php 
-					// }
-					?>
+					<?php }} else { ?>
+					<tr>
+						<td>
+							Blank
+						</td>
+					</tr>
+					<?php } ?>
 				</tbody>
 			</table>
-			
 		</div>
 	</div>
+
+	<!-- Pending to delete -->
 	<script>
           function confirmation(){
             var result = confirm("Are you sure to delete?");
@@ -86,10 +80,8 @@
               console.log("Deleted")
             }
           }
-        </script>
+    </script>
 
 <script src="js/script.js"></script>
-
-
 </body>
 </html>
