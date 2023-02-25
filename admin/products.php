@@ -56,11 +56,10 @@
 						<td></td>
 						<td><p>200</p></td>
 						<td></td>
-						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
+						<td><a href="editproducts.php"><span class="status process">Edit</span></td>
+						<td><span class="status completed"onclick="confirmation()">Delete</span></td>
 					
-						<td><a href="editproducts.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
-						<td></td>
-						<td><a href="addproduct.php"><i class='bx bx-trash' ></i><p>Delete</p></a></td>
+						
 						
 					</tr>
 						<tr>
@@ -76,14 +75,10 @@
 						<td></td>
 						<!--<td><span class="status process">Edit</span><span class="status completed">Delete</span></td>-->
 <<<<<<< HEAD
-						 <td><input type="button" class="status_process" value="EDIT"></i></td>
-						<td><i class='bx bx-trash' > <span class="status completed" onclick="confirmation()">Delete</span></i></td>
+						
+<td><a href="editproducts.php"><span class="status process">Edit</span></td>
+						<td><span class="status completed"onclick="confirmation()">Delete</span></td>
 					
-					
-=======
-						<td><a href="editproducts.php"><i class='bx bxs-edit' ></i><p>Edit</p></a><td>
-						<td></td>
-						<td><a href="addproduct.php"><i class='bx bx-trash' ></i><p>Delete</p></a></td>
 					</tr>
 >>>>>>> 9a47366575b693a290c2c7b25f9fb4bc01ef3af7
 				</tbody>
