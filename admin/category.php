@@ -21,7 +21,7 @@
 	</div>
 
 
-	<div class="table-data">
+	<div class="categorytable">
 		<div class="order">
 			<div class="head">
 				<h3>All Categories</h3>
@@ -30,7 +30,7 @@
 				
 			</div>
 			
-			<table>
+			<table  style="width:100%">
 				<?php 
 					// $database = new Database;
 					// $database->select('categories', '*');
@@ -52,16 +52,17 @@
 					?>
 					<tr>
 						<td>
-							<i class='bx bx-store-alt'></i>
+							<!-- <i class='bx bx-store-alt'></i> -->
 							<?php 
 							// echo $row['cat_title']
 							?>
-						</td>
-						<td></td>
+						
+				
 						<!-- <td><span class="status process">Edit</span><span class="status completed">Delete</span></td> -->
-						<td><a href="editcategory.php"><span class="status process">Edit</span></td>
-						<td><span class="status completed"onclick="confirmation()">Delete</span></td>
+						<td><a href="editcategory.php"><span class="status edit">Edit</span></td>
+						<td><span class="status delete"onclick="confirmation()">Delete</span></td>
 					
+						</td>
 					</tr>
 					<?php 
 						// }} else {

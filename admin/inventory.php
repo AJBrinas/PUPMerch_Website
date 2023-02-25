@@ -4,7 +4,7 @@
 
 <!-- MAIN -->
 <main>
-<link rel="stylesheet" href="css/orders.css">
+<link rel="stylesheet" href="css/inventory.css">
 	<div class="head-title">
 		<div class="left">
 			<h1>INVENTORY</h1>
@@ -20,14 +20,12 @@
 		</div>
 	</div>
 
-	<div class="table-data">
+	<div class="inventory-table">
 		<div class="order">
 			<div class="head">
 				<h3>Out of Stock</h3>
-				<i class='bx bx-plus' ></i>
-				<i class='bx bx-filter' ></i>
 			</div>
-				<table>
+				<table style="width:100%">
 				
 						<thead>
 							
@@ -53,10 +51,8 @@
 			<div class="order"> 
 			<div class="head">
 				<h3>Low Stock</h3>
-				<i class='bx bx-plus' ></i>
-				<i class='bx bx-filter' ></i>
 			</div>
-			<table>
+			<table style="width:100%">
 						<thead>
 							
 								<th>Title</th>

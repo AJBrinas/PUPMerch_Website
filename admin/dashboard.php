@@ -48,11 +48,11 @@
 				<div class="order">
 					<div class="head">
 						<h3>Orders</h3>
-						<i class='bx bx-search' ></i>
+						<!-- <i class='bx bx-search' ></i>
 						<i class='bx bx-filter' ></i>
-						
+						 -->
 					</div>
-					<table>
+					<table style="width:100%">
 						<thead>
 							<tr>
 								<th>User</th>
@@ -110,8 +110,8 @@
 				<div class="todo">
 					<div class="head">
 						<h3>Products</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
+						<!-- <i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i> -->
 					</div>
 				</div>
 			</div>
