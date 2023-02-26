@@ -1,6 +1,7 @@
 <?php 
 include "config.php";
 
+// Viewing Categories
 if(isset($_POST['p_cat'])){
     $cat = $_POST['p_cat'];
     $database = new Database;
@@ -13,9 +14,9 @@ if(isset($_POST['p_cat'])){
     }
 }
 
-if(isset($_POST['create'])){
+// if(isset($_POST['create'])){
     
-}
+// }
 
 // Here is the PDO supported POST
 if(isset($_POST['submit'])) 
@@ -26,21 +27,6 @@ if(isset($_POST['submit']))
     $img_type = $_FILES['img']['type'];
     $tmp_name = $_FILES['img']['tmp_name'];
     $img_error = $_FILES['img']['error'];
-
-    echo 'hatdog ko masarap <br />';
-        echo $id;
-        echo '<br />';
-        echo $title;
-        echo '<br />';
-        echo $img_name;
-        echo '<br />';
-        echo $img_type;
-        echo '<br />';
-        echo $tmp_name;
-        echo '<br />';
-        echo $img_error;
-        echo '   sHatdog ko malaki';
-
     
     $filename_separate = explode('.', $img_name);
     echo $filename_separate[1];
@@ -76,10 +62,10 @@ if (isset($_POST['editCategory']))
     $categoryName = $_POST['edit_catname'];
     $categoryID = $_POST['categoryID'];
     echo $categoryName;
-        $db = new Database;
-        $db->editCategory($categoryID, $categoryName);
-        header('Location: ../admin/category.php');
+    $db = new Database;
+    $db->editCategory($categoryID, $categoryName);
+    header('Location: ../admin/category.php');
 }
 
-
+// Adding Products
 ?>

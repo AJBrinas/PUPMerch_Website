@@ -51,28 +51,14 @@
 					?>
 					<tr>
 						<td>
-<<<<<<< HEAD
 							<i class='bx bx-store-alt'></i>
 							<?php echo $row['cat_title'] ?>
 						</td>
 						<td></td>
-						<td><a href="editcategory.php?id=<?php echo $row['cat_id'] ?>"><span class="status process">Edit</span></td>
-						<td><span class="status completed">
-						<a href="delete.php?action_type=delete&id=<?php echo $row['cat_id'];?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
+						<td><a href="editcategory.php?id=<?php echo $row['cat_id'] ?>"><span class="status edit">Edit</span></td>
+						<td><span class="status delete">
+						<a href="../config/delete.php?action_type=delete&id=<?php echo $row['cat_id'], '&name=categories';?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
 						</span></td>
-=======
-							<!-- <i class='bx bx-store-alt'></i> -->
-							<?php 
-							// echo $row['cat_title']
-							?>
-						
-				
-						<!-- <td><span class="status process">Edit</span><span class="status completed">Delete</span></td> -->
-						<td><a href="editcategory.php"><span class="status edit">Edit</span></td>
-						<td><span class="status delete"onclick="confirmation()">Delete</span></td>
-					
-						</td>
->>>>>>> c9a328f9125b0bbbc3b07ceaa3c1dbc8abb0bc64
 					</tr>
 					<?php }} else { ?>
 					<tr>

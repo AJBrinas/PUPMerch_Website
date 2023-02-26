@@ -53,6 +53,7 @@ class Database
         $query = $db->query($sql);
     }
     
+    // Editing Categories
     public function editCategory($categoryID, $categoryName)
     {
         $database = new Database;
@@ -60,9 +61,21 @@ class Database
         $sql = "UPDATE categories 
                 SET cat_title = ?
                 WHERE cat_id = ?";
-        $asql = array(&$categoryName, &$categoryID);
+        $param = array(&$categoryName, &$categoryID);
         $query = $db->prepare($sql);
-        $asql = $query->execute($asql);
+        $run = $query->execute($param);
+    }
+
+    // Deleting for all
+    public function delete($table, $id)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "DELETE FROM $table
+                WHERE cat_id = $id";
+        // $param = array(&$table, &$id);
+        $query = $db->query($sql);
+        // $run = $query->execute($param);
     }
 }
 ?>
