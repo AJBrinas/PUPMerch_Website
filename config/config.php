@@ -110,7 +110,15 @@ class Database
         $query = $db->prepare($sql);
         $run = $query->execute($params);
     }
+    public function editprod($catID, $title, $price, $desc, $img, $qty, $status){
+    $database = new Database;
+    $db = $database->connections();
+    $sql = "UPDATE products
+            SET cat_id = ?, product_title =?, product_price=?, product_desc=?, product_image=?, product_qty=?, product_status=?
+            WHERE product_id = ?";
+    $param = array(&$catID, &$title, &$price, &$desc, &$img, &$qty, &$status);
+    $query = $db->prepare($sql);
+    $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
 }
-
-
+}
 ?>

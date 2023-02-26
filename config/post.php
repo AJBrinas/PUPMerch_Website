@@ -128,5 +128,38 @@ if (isset($_POST['login']))
             header('Location: ../home.php');
 }
 
+if (isset($_POST['editproduct']))
+{
+    $id = $_POST['id'];
+    echo $id;
+    $title = $_POST['ProdTitle'];
+    echo $title;
+    $catID = $_POST['ProdCategory'];
+    $price = $_POST['ProdPrice'];
+    $qty = $_POST['ProdQuantity'];
+    $desc = $_POST['ProdDescription'];
+    //$key = $_GET['product_keywords'];
+    //ALTER KEYWORD
+    $img = $_FILES['featured_img']['name'];
+    $tmp_img = $_FILES['featured_img']['tmp_name'];
+    $status = $_POST['product_status'];
+
+    $db = new Database;
+    $db->editprod($catID, $title, $price, $desc, $img, $qty, $status);
+
+    //$db->editprod($catID, $title, $price, $desc, $img, $qty, $status);
+    //new database, query muna pasa id=, function to call certain getting the id then fetch assoc, result
+    $move_image = '../admin/img/'.$img;
+    $allowed_ext = array('jpeg', 'png', 'jpg');
+    unlink($move_image.$id['product_image']);
+    move_uploaded_file($tmp_img, $move_image);
+    $filename_separate = explode('.', $img);
+    echo $filename_separate[1];
+    $file_ext = strtolower($filename_separate[1]);
+
+        $sql=$conn->prepare('UPDATE dbo.products SET ProdT=title,ProdC=catID, ProdP=price, ProductD=desc, featured_img=img, ProdQ=qty, product_status=status');
+       // header('Location: ../admin/products.php?Success');
+    
+}
 
 ?>
