@@ -46,8 +46,8 @@ GO
     );
     GO
     ---- Dumping data for table order-prod
-    INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
-    (1, 'Mejela', 'Gojol', 'mgojol','mejela@gmail.com', 'sample1', '09557009175', 'Commonwealth', 'Quezon City');
+INSERT INTO order_products (product_id,product_qty, ordertotal_amount, product_user, order_date, order_confirm, order_delivery) values
+(3, 2, 100, 1, '2023-01-01', '2023-01-01', '2023-01-03');
     GO
     
     ----Creating table prod   
