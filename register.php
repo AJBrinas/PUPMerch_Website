@@ -32,30 +32,49 @@
 
             <tr>
                 <td>
-                    <input type="text" name="fname" placeholder="First Name" required>	
+                    <input type="text" name="fname" placeholder="First Name" id="fname" required>	
                 </td>
-            </tr><tr></tr>
+            </tr>
                 <td>
-                    <input type="text" name="lname" placeholder="Last Name" required>
+                    <input type="text" name="lname" placeholder="Last Name" id="fname" required>
+                </td>
+            </tr>
+             
+            <tr>
+                <td >
+                   
+                    <input type="text" name="address" placeholder="Address" id="address" required>
+                </td>
+            </tr> 
+            <tr>
+                <td >
+                   
+                    <input type="text" name="city" placeholder="City" id="city" required>
                 </td>
             </tr>
             
             <tr>
                 <td >
                    
-                    <input type="text" name="phone" placeholder="Contact Number" required>
+                    <input type="text" name="phone" placeholder="Contact Number" id="phone" required>
                 </td>
             </tr>
             <tr>
                 <td >
                    
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
                     
                 </td>
             </tr>
             <tr>	
                 <td >
-                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="username" name="username" placeholder="Username" id="username" required>
+                    
+                </td>
+            </tr>
+            <tr>	
+                <td >
+                    <input type="password" name="password" placeholder="Password" id="password" required>
                     
                 </td>
             </tr>

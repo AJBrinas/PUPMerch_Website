@@ -1,13 +1,8 @@
-    SET NOCOUNT ON
-    GO
+CREATE DATABASE likhamerch_db;
+GO
 
-    set nocount    on
-    set dateformat mdy
-
-    -- Table structure for table `accounts_tbl`
-    --
-
-    create database likhamerch_db;
+USE likhamerch_db;
+GO
 
     ----Creating table admin
     CREATE TABLE admin (
@@ -16,21 +11,24 @@
     ad_username varchar(50) NOT NULL,
     ad_pass varchar(50) NOT NULL,
     );
+
+    GO
+
     ---- Dumping data for table admin
     INSERT INTO admin (admin_id, admin_name, ad_username, ad_pass) VALUES
     (1, 'admin', 'admin@gmail.com', '123');
-
+    GO
     ----Creating table categories
     CREATE TABLE categories (
     cat_id int primary key NOT NULL identity(1,1),
     cat_title text NOT NULL,
     );
-
+    GO
     ---- Dumping data for table categories
     INSERT INTO categories (cat_id, cat_title) values
-    (1, 'T-shirt'),
-    (2, 'Lanyard');
-
+    ('T-shirt'),
+    ('Lanyard');
+    GO
     ----Creating table order-prod
     CREATE TABLE order_products(
     order_id int primary key NOT NULL identity(1,1),
@@ -42,15 +40,16 @@
     product_user int NOT NULL
         constraint FK_cust
         foreign key references customer (cust_id),
-    order_date varchar(11) NOT NULL,
-    order_confirm tinyint NOT NULL DEFAULT 0,
-    order_delivery tinyint NOT NULL DEFAULT 0
+    order_date date NOT NULL,
+    order_confirm date NOT NULL,
+    order_delivery date NOT NULL,
     );
-
+    GO
     ---- Dumping data for table order-prod
-    INSERT INTO order_products (order_id, product_id, product_qty, ordertotal_amount, product_user, order_date, order_confirm, order_delivery) values
-    (1, 1, 2, 100, 1, "2023-01-01", "2023-01-01", "2023-01-03");
-
+    INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
+    (1, 'Mejela', 'Gojol', 'mgojol','mejela@gmail.com', 'sample1', '09557009175', 'Commonwealth', 'Quezon City');
+    GO
+    
     ----Creating table prod   
     CREATE TABLE products (
     product_id int primary key NOT NULL identity(1,1) ,
@@ -65,21 +64,21 @@
     product_keywords text DEFAULT NULL,
     product_status int NOT NULL DEFAULT 1
     );
-
+    GO
     ---- Dumping data for table prod
-    INSERT INTO products (product_id,product_cat,product_title,product_price,product_desc,product_image,product_qty,product_keywords,product_status) values
-    (1, 1, 'Cats of PUP', 230, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'cats', 0),
-    (2, 1, 'PUP est', 290, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUP est', 0),
-    (3, 1, 'isko', 250, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'isko', 0),
-    (4, 1, 'isko at iska', 350, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'isko iska', 0),
-    (5, 1, 'iskolar', 300, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'iskolar', 0),
-    (6, 1, 'Mula Sayo', 300, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'Mula Sayo', 0),
-    (7, 1, 'PUPian', 200, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUPian', 0),
-    (8, 1, 'PUPQC', 350, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUPQC', 0),
-    (9, 2, 'Mula Sayo Para sa Bayan', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard1', 0),
-    (10, 2, 'Countrys First ', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard2', 0),
-    (11, 2, 'PUP Light of the Nation', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard3', 0);
-
+    INSERT INTO products (product_cat,product_title,product_price,product_desc,product_image,product_qty,product_keywords,product_status) values
+    (1, 'Cats of PUP', 230, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'cats', 0),
+    (1, 'PUP est', 290, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUP est', 0),
+    (1, 'isko', 250, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'isko', 0),
+    (1, 'isko at iska', 350, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'isko iska', 0),
+    (1, 'iskolar', 300, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'iskolar', 0),
+    (1, 'Mula Sayo', 300, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'Mula Sayo', 0),
+    (1, 'PUPian', 200, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUPian', 0),
+    (1, 'PUPQC', 350, 'Limited Edition Likha Clothing PUPQC Merch', 'img', 30, 'PUPQC', 0),
+    (2, 'Mula Sayo Para sa Bayan', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard1', 0),
+    (2, 'Countrys First ', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard2', 0),
+    (2, 'PUP Light of the Nation', 30, 'PUP Likha Lanyard', 'img', 30, 'Lanyard3', 0);
+    GO
     ----Creating table prod-cart   
     CREATE TABLE product_cart (
     product_id int NOT NULL
@@ -89,10 +88,11 @@
         constraint FK_customer
         foreign key references customer(cust_id)
     );
+    GO
     ---- Dumping data for prod-cart   
-    INSERT INTO products (product_id,cust_id) values
-    (1,1);
-
+    INSERT INTO product_cart (product_id,cust_id) values
+    (3,1);
+    GO
     ---- Creating table for customer
     CREATE TABLE customer(
     cust_id int primary key NOT NULL identity(1,1),
@@ -105,6 +105,8 @@
     cust_address varchar (100) NOT NULL,
     cust_city varchar(50) NOT NULL,
     );
+    GO
     ---- Dumping data for customer
-    INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
-    (1, 'Mejela', 'Gojol', 'mejela@gmail.com', 'sample1', '09557009175', 'Commonwealth', 'Quezon City');
+    INSERT INTO customer (cust_fname, cust_lname, cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
+    ('Mejela', 'Gojol', 'mejela@gmail.com', 'sample1', '09557009175', 'Commonwealth', 'Quezon City');
+    GO
