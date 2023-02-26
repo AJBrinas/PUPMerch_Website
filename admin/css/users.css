@@ -104,12 +104,12 @@ main{
 	font-weight: 500;
 }
 /*buttons*/
-.status.edit {
+.status .edit {
 	/* background: var(--blue); */
 	background: blue;
 	font-size: 10px;
 }
-.status.delete {
+.status .delete {
 	background:#FFC300 ;
 	font-size:10px;
 	

@@ -20,7 +20,7 @@
 
     <div class="center">
       <h1>User Login</h1>
-      <form action="config/post.php" method="post">
+      <form action="home.php" method="post">
         <div class="txt_field">
           <input type="text" name="username" required>
           <span></span>
@@ -31,10 +31,11 @@
           <span></span>
           <label>Password</label>
         </div>
-        <div class="pass"></div>
-        <button type="submit" name="login" class="click" value="">Login</button>
-        <div class="signup_link">
-          Not a member? <a href="register.php">Signup</a>
+        <div class="pass">
+            <button type="submit" class="click">Login</button> 
+        <!-- <button type="submit" name="login" class="click" value="">Login</button> -->
+        </div>
+        <div class="signup_link">Not a member? <a href="register.php">Signup</a>
         </div>
       </form>
     </div>
