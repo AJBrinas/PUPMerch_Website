@@ -1,8 +1,21 @@
+
+<?php
+session_start();
+error_reporting(0);
+include('config/config.php');
+if ($_SESSION['adminlog'] != '') {
+    header("location: admin/dashboard.php");
+    exit;
+} else if ($_SESSION['UserLog'] != '') {
+    header("location: UserLog.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Customer Log In</title>
+    <title>Admin Log In</title>
     <link rel="stylesheet" href="css/users.css">
   </head>
   <body>
@@ -19,8 +32,8 @@
 
 
     <div class="center">
-      <h1>User Login</h1>
-      <form action="home.php" method="post">
+      <h1>Admin Login</h1>
+      <form action="admin/dashboard.php" method="post">
         <div class="txt_field">
           <input type="text" name="username" required>
           <span></span>
@@ -30,12 +43,10 @@
           <input type="password" name="password" required>
           <span></span>
           <label>Password</label>
+          
         </div>
         <div class="pass">
-            <button type="submit" name="login" class="click">Login</button> 
-        <!-- <button type="submit" name="login" class="click" value="">Login</button> -->
-        </div>
-        <div class="signup_link">Not a member? <a href="register.php">Signup</a>
+            <button type="submit" name="login"  class="click">Login</button> 
         </div>
       </form>
     </div>

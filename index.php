@@ -2,6 +2,18 @@
 <?php 
     include 'header.php';
 ?>
+<?php
+session_start();
+error_reporting(0);
+include('config/config.php');
+if ($_SESSION['adminlog'] != '') {
+    header("location: admin/dashboard.php");
+    exit;
+} else if ($_SESSION['UserLog'] != '') {
+    header("location: UserLog.php");
+    exit;
+}
+?>
 <!-- -Automatic Slideshow -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/slideshow.js" defer></script>

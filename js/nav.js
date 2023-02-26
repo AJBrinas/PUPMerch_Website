@@ -33,7 +33,7 @@ const createNav = () => {
             
               
             <div class="dropdown-content">
-                <a href="UserLog.php" class="link">Login</a>
+                <a href="mainlogin.php" class="link">Login</a>
                 <a href="register.php" class="link">Sign Up</a>
                 </div>
         </div>
