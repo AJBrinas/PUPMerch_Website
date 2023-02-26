@@ -24,7 +24,7 @@
     
 
         <div class="reg">
-        <form name="signupForm" >
+        <form action="config/post.php" method="post" name="signupForm" >
             <h2 align="center">SIGN UP</h2>
 
 
@@ -81,7 +81,7 @@
             
             <tr>
             <td >
-                <input type="submit" name="signup" value="Sign Up" class="click">
+                <input type="submit" name="customer" value="Sign Up" class="click">
             </td>
             </tr>
             

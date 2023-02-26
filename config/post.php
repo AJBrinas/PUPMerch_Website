@@ -97,5 +97,36 @@ if (isset($_POST['addprod']))
         header('Location: ../admin/products.php?Success');
     }
 
+
 }
+
+if (isset($_POST['customer']))
+{
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $address = $_POST['address'];
+    $city = $_POST['city'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    echo $fname;
+            $db = new Database; 
+            $db->customer($lname, $fname, $address, $city, $phone, $email, $username, $password);
+            header('Location: ../UserLog.php');
+}
+
+if (isset($_POST['login']))
+{
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    echo $username;
+            $db = new Database; 
+            $db->checkUser($username, $password);
+            header('Location: ../home.php');
+}
+
+
 ?>

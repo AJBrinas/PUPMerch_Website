@@ -7,7 +7,6 @@
   </head>
   <body>
 
-    <link rel="stylesheet" href="css/users.css">
     <script src="js/slideshow.js" defer></script>
         <header class="intro">
             <div class="intro-slideshow">
@@ -21,22 +20,19 @@
 
     <div class="center">
       <h1>User Login</h1>
-      <form method="post">
+      <form action="config/post.php" method="post">
         <div class="txt_field">
-          <input type="text" required>
+          <input type="text" name="username" required>
           <span></span>
           <label>Username</label>
         </div>
         <div class="txt_field">
-          <input type="password" required>
+          <input type="password" name="password" required>
           <span></span>
           <label>Password</label>
         </div>
         <div class="pass"></div>
-
-        <input type="submit" value="Login">
-
-
+        <button type="submit" name="login" class="click" value="">Login</button>
         <div class="signup_link">
           Not a member? <a href="register.php">Signup</a>
         </div>

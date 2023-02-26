@@ -7,7 +7,7 @@ class Database
     // Configuration 
     
     // Server Name
-    private $db_host = "sqlsrv:Server=ANDREW\SQLExpress;Database=likhamerch_db";
+    private $db_host = "sqlsrv:Server=LAPTOP-E3RTMBRR\SQLEXPRESS;Database=likhamerch_db";
     private $user = "";
     private $pass = "";
     private $c = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
@@ -89,5 +89,28 @@ class Database
         $run = $query->execute($params);
     }
 
+     public function customer($lname, $fname, $address, $city, $phone, $email, $username, $password)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, 
+        cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
+        (2,?,?,?,?,?,?,?,?)";
+        $params = array($fname, $lname, $username, $email, $password, $phone, $address, $city);
+        $query = $db->prepare($sql);
+        $run = $query->execute($params);
+    }
+
+     public function checkUser($username, $password)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "SELECT * from customer WHERE cust_uname = '$username' and cust_pass = '$password'";
+        $params = array($username, $password);
+        $query = $db->prepare($sql);
+        $run = $query->execute($params);
+    }
 }
+
+
 ?>
