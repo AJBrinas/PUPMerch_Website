@@ -22,7 +22,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><img src="img/shirt1.jpg" alt="#"></td>
+      <td><img src="img/shirt4.jpg" alt="#"></td>
       <td>name</td>
       <td>price</td>
       <td><input type="number" value="1" min="1"></td>
@@ -54,7 +54,7 @@
 </table>
 
 <div class="checkout-container">
-  <a class="checkout-button" style="text-decoration:none" href="UserLog.php">Proceed to Checkout</a>
+  <a class="checkout-button" style="text-decoration:none" href="invoice.php">Proceed to Checkout</a>
 </div>
 </div>
 

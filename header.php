@@ -21,14 +21,11 @@
             <div class="dropdown">           
             <button class="dropbtn">
                 <img src="img/user.png" alt="user logo">            
-            
+            </button>
             
             <div class="dropdown-content">
-                <a href="mainlogin.php" class="link">Login</a>
-                <a href="register.php" class="link">Sign Up</a>
-
+                <a href="index.php" class="link">Logout</a>
             </div>
-            </button>
         </div> 
 
                 <img src="img/cart.png" alt="cart">

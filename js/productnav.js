@@ -29,8 +29,7 @@ const createNav = () => {
             
               
             <div class="dropdown-content">
-                <a href="../mainlogin.php" class="link">Login</a>
-                <a href="../register.php" class="link">Sign Up</a>
+                <a href="../index.php" class="link">Logout</a>
                 </div>
         </div>
                 <a href="../cart.php"><img src="../img/cart.png" alt="cart"></a>
