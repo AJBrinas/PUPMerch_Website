@@ -48,6 +48,4 @@ if ($_SESSION['adminlog'] != '') {
     </div>
   </body>
 </html>
-     <!--footer-->
-<?php include 'footer.php';
-       ?>
+  
