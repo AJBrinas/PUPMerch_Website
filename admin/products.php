@@ -71,7 +71,7 @@
 						<td></td>
 						<td><a href="editcategory.php"><span class="status edit">Edit</span></a></td>
 						<td><span class="status delete">
-							<a href="../config/delete.php?action_type=delete&id=<?php echo $row['product_id'], '&name=products';?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
+							<a href="../config/deleteprod.php?action_type=delete&id=<?php echo $row['product_id'], '&name=products';?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
 						</span></td>
 					</tr>
 					<?php }} else { ?>

@@ -72,11 +72,20 @@ class Database
         $database = new Database;
         $db = $database->connections();
         $sql = "DELETE FROM $table
-                WHERE cat_id = $id";
-        // $param = array(&$table, &$id);
-        $query = $db->query($sql);
-        // $run = $query->execute($param);
+                WHERE  cat_id=$id";
+        $query = $db->prepare($sql);
+        $query->execute([$id]);
     }
+    public function deleteproducts($table, $id)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "DELETE FROM $table
+                WHERE  product_id=$id";
+        $query = $db->prepare($sql);
+        $query->execute([$id]);
+    }
+
 
     public function addProduct($cat_id, $title, $price, $desc, $img, $qty, $key, $status)
     {
