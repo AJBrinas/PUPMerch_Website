@@ -28,6 +28,7 @@
 }
  .categorytable .head .bx {
 	cursor: pointer;
+	color: black;
 }
 
 .categorytable .order {
@@ -37,6 +38,10 @@
  .categorytable .order table {
 	width: 70%;
 	border-collapse: collapse;
+}
+.categorytable  p{
+	text-decoration: none;
+	color: black;
 }
 /*Title, Actions*/
  .categorytable .order table th {

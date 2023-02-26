@@ -7,7 +7,7 @@ class Database
     // Configuration 
     
     // Server Name
-    private $db_host = "sqlsrv:Server=DESKTOP-D105JGC\SQLEXPRESS;Database=likhamerch_db";
+    private $db_host = "sqlsrv:Server=DESKTOP-MUFVKVG\SQLEXPRESS;Database=likhamerch_db";
     private $user = "";
     private $pass = "";
     private $c = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);

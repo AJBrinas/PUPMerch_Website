@@ -10,12 +10,12 @@ if ($_SESSION['adminlog'] != '') {
     header("location: UserLog.php");
     exit;
 }
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Main Log In</title>
+    <title>Admin Log In</title>
     <link rel="stylesheet" href="css/users.css">
   </head>
   <body>
@@ -32,20 +32,25 @@ if ($_SESSION['adminlog'] != '') {
 
 
     <div class="center">
-      <h1>Main Login</h1>
-      <form action="adminlog.php" method="post">
-        <div class="pass">
-            <button type="submit" name="login"class="click">Admin</button> 
-        <!-- <button type="submit" name="login" class="click" value="">Login</button> -->
+      <h1>Admin Login</h1>
+      <form action="admin/dashboard.php" method="post">
+        <div class="txt_field">
+          <input type="text" name="username" required>
+          <span></span>
+          <label>Username</label>
         </div>
-        </form>    
-        <form action="UserLog.php" method="post">
+        <div class="txt_field">
+          <input type="password" name="password" required>
+          <span></span>
+          <label>Password</label>
+          
+        </div>
         <div class="pass">
-            <button type="submit" name="login" class="click">User</button> 
-        <!-- <button type="submit" name="login" class="click" value="">Login</button> -->
+            <button type="submit" name="login"  class="click">Login</button> 
         </div>
       </form>
     </div>
+
   </body>
 </html>
-  
+

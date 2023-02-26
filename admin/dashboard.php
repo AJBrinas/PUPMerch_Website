@@ -2,6 +2,10 @@
     include 'sidebar.php'
 ?>
 
+
+
+
+
 		<!-- MAIN -->
 		<main>
 			<div class="head-title">

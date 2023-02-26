@@ -32,7 +32,7 @@
           <label>Password</label>
         </div>
         <div class="pass">
-            <button type="submit" class="click">Login</button> 
+            <button type="submit" name="login" class="click">Login</button> 
         <!-- <button type="submit" name="login" class="click" value="">Login</button> -->
         </div>
         <div class="signup_link">Not a member? <a href="register.php">Signup</a>

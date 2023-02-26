@@ -25,7 +25,6 @@
 			<div class="head">
 				<h3>All Categories</h3>
 				<a href="addcategory.php"><i class='bx bxs-add-to-queue' ></i><p>Add Category</p></a>
-				<i class='bx bx-filter' ></i>
 			</div>
 			
 			<table  style="width:100%">
@@ -57,7 +56,7 @@
 						<td></td>
 						<td><a href="editcategory.php?id=<?php echo $row['cat_id'] ?>"><span class="status edit">Edit</span></td>
 						<td><span class="status delete">
-							<a href="../config/delete.php?action_type=delete&id=<?php echo $row['cat_id'], '&name=categories';?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
+						<a href="delete.php?action_type=delete&id=<?php echo $row['cat_id'];?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
 						</span></td>
 					</tr>
 					<?php }} else { ?>
