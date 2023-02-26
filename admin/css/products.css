@@ -58,6 +58,7 @@
 }
  .products-table .head .bx {
 	cursor: pointer;
+	color: black;
 }
 
  .products-table .order {
@@ -67,6 +68,10 @@
  .products-table .order table {
 	width: 70%;
 	border-collapse: collapse;
+}
+.products-table  p{
+	text-decoration: none;
+	color: black;
 }
 /*products column*/
  .products-table .order table th {

@@ -22,7 +22,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><img src="img/shirt4.jpg" alt="#"></td>
+      <td><img src="img/shirt4s.jpg" alt="#"></td>
       <td>name</td>
       <td>price</td>
       <td><input type="number" value="1" min="1"></td>
