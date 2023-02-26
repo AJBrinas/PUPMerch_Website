@@ -25,7 +25,7 @@ GO
     );
     GO
     ---- Dumping data for table categories
-    INSERT INTO categories (cat_id, cat_title) values
+    INSERT INTO categories (cat_title) values
     ('T-shirt'),
     ('Lanyard');
     GO
@@ -108,5 +108,5 @@ INSERT INTO order_products (product_id,product_qty, ordertotal_amount, product_u
     GO
     ---- Dumping data for customer
     INSERT INTO customer (cust_fname, cust_lname, cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
-    ('Mejela', 'Gojol', 'mejela@gmail.com', 'sample1', '09557009175', 'Commonwealth', 'Quezon City');
+    ('Mejela', 'Gojol', 'mgojol','mejela@gmail.com', 'sample1', '09557009175', 'Commonwealth', 'Quezon City');
     GO
