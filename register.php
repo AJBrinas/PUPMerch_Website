@@ -24,7 +24,7 @@
     
 
         <div class="reg">
-        <form action="config/post.php" method="post" name="signupForm" >
+        <form action="UserLog.php" method="post" name="signupForm" >
             <h2 align="center">SIGN UP</h2>
 
 
