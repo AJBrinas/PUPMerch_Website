@@ -18,7 +18,7 @@ if(isset($_POST['p_cat'])){
     
 // }
 
-// Here is the PDO supported POST
+// Here is the PDO supported POST EXAMPLE
 if(isset($_POST['submit'])) 
 {
     $id = $_POST['id'];
@@ -45,6 +45,7 @@ if(isset($_POST['submit']))
     }
 
 }
+// END OF EXAMPLE
 
 // Adding Category
 if(isset($_POST['addCategory'])) 
@@ -68,4 +69,33 @@ if (isset($_POST['editCategory']))
 }
 
 // Adding Products
+if (isset($_POST['addprod']))
+{
+    $title = $_POST['product_title'];
+    $catID = $_POST['product_cat'];
+    $price = $_POST['product_price'];
+    $qty = $_POST['product_qty'];
+    $desc = $_POST['product_desc'];
+    $key = $_POST['product_keywords'];
+    $img = $_FILES['featured_img']['name'];
+    $tmp_img = $_FILES['featured_img']['tmp_name'];
+    $status = $_POST['product_status'];
+
+    $filename_separate = explode('.', $img);
+    echo $filename_separate[1];
+    $file_ext = strtolower($filename_separate[1]);
+
+    $allowed_ext = array('jpeg', 'png', 'jpg');
+    
+    if (in_array($file_ext, $allowed_ext))
+    {
+        $move_image = '../admin/img/'.$img;
+
+        move_uploaded_file($tmp_img, $move_image);
+        $db = new Database;
+        $db->addProduct($catID, $title, $price, $desc, $img, $qty, $key, $status);
+        header('Location: ../admin/products.php?Success');
+    }
+
+}
 ?>

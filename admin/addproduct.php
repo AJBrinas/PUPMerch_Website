@@ -71,7 +71,7 @@ include 'sidebar.php'
 							foreach($result as $row)
 							{ $count++;
 					?>    
-                        <option value = "<?php echo $row['product_id'] ?>"></option><?php echo $row['cat_title']?></option>
+                        <option value = "<?php echo $row['cat_id'] ?>"><?php echo $row['cat_title']?></option>
                         <?php 
 						}} else {
 						?>
@@ -112,6 +112,7 @@ include 'sidebar.php'
                     <option value="0">Draft</option>
                 </select>
                 </div>
+                <button type="submit" name="addprod">submit</button>
             </form>
         </div>
     </body>

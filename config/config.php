@@ -77,5 +77,17 @@ class Database
         $query = $db->query($sql);
         // $run = $query->execute($param);
     }
+
+    public function addProduct($cat_id, $title, $price, $desc, $img, $qty, $key, $status)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "INSERT INTO products (product_cat,product_title,product_price,product_desc,product_image,product_qty,product_keywords,product_status)
+                VALUES (?,?,?,?,?,?,?,?)";
+        $params = array(&$cat_id, &$title, &$price, &$desc, &$img, &$qty, &$key, &$status);
+        $query = $db->prepare($sql);
+        $run = $query->execute($params);
+    }
+
 }
 ?>
