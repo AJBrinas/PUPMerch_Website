@@ -7,19 +7,20 @@ class Database
     // Configuration 
     
     // Server Name
-    private $db_host = "sqlsrv:Server=DESKTOP-MUFVKVG\SQLEXPRESS;Database=likhamerch_db";
+    private $db_host = "sqlsrv:Server=ANDREW\SQLEXPRESS;Database=likhamerch_db";
     private $user = "";
     private $pass = "";
     private $c = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
 
     private $result = array();
+    private $res = array();
     protected $connect;
 
+    // Setting up Connnections
     public function connections()
     {
         try{
             $this->connect = new PDO($this->db_host, $this->user,$this->pass,$this->c);
-            // echo 'Panget si janna';
             return $this->connect;
         } 
         catch (PDOException $e){
@@ -27,6 +28,7 @@ class Database
         }
     }
 
+    // Selecting All Tables
     public function select($table, $row = '*')
     {
         $database = new Database;
@@ -37,6 +39,19 @@ class Database
         $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    // Selecting All Tables
+    public function oneSelect($table, $row = '*', $id)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "SELECT $row FROM $table
+                WHERE product_id = $id;";
+        $query = $db->query($sql);
+        $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+    // Getting Results
     public function getResults()
     {
         $values = $this->result;
@@ -44,6 +59,36 @@ class Database
         return $values;
     }
 
+    // Getting Results no. 2
+    public function getRes()
+    {
+        $val = $this->res;
+        $this->res = array();
+        return $val;
+    }
+
+    // Getting Products
+    public function getProducts()
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "all_products";
+
+        $query = $db->query($sql);
+        $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    // Getting Certain Products
+    public function getOneProduct()
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "";
+        $query = $db->query($sql);
+        $this->result = $query->fetch(PDO::FETCH_ASSOC);
+    }
+
+    // Adding Categories
     public function addCategory($categoryName)
     {
         $database = new Database;
@@ -98,6 +143,7 @@ class Database
         $run = $query->execute($params);
     }
 
+
      public function customer($lname, $fname, $address, $city, $phone, $email, $username, $password)
     {
         $database = new Database;
@@ -119,6 +165,7 @@ class Database
         $query = $db->prepare($sql);
         $run = $query->execute($params);
     }
+
     public function editprod($catID, $title, $price, $desc, $img, $qty, $status){
     $database = new Database;
     $db = $database->connections();
@@ -128,6 +175,26 @@ class Database
     $param = array(&$catID, &$title, &$price, &$desc, &$img, &$qty, &$status);
     $query = $db->prepare($sql);
     $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
-}
+    }
+
+
+
+    public function editProduct($cat_id, $title, $price, $desc, $img, $qty, $key, $status, $id)
+    {
+        $database = new Database;
+        $db = $database->connections();
+        $sql = "UPDATE products SET 
+                product_cat = ?
+                ,product_title = ?
+                ,product_price = ?
+                ,product_desc = ?
+                ,product_image = ?
+                ,product_qty = ?
+                ,product_keywords = ?
+                ,product_status = ?
+                WHERE product_id = ?";
+        $params = array(&$cat_id, &$title, &$price, &$desc, &$img, &$qty, &$key, &$status, &$id);
+    }
+
 }
 ?>

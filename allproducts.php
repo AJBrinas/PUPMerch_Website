@@ -1,4 +1,8 @@
 <?php include 'header.php';
+
+$db = new Database;
+$db->getProducts();
+$result = $db->getResults();
 ?>
 
 <html>
@@ -16,112 +20,28 @@
         <!--Products-->
         <div class="allproducts-container">
         <!--Product1-->
+        <?php 
+                if (!empty($result))
+                {
+                    $count = 0;
+                    foreach($result as $row)
+                    {
+            ?>
             <div class="allproducts-card">
                 <div class="allproducts-image">
-                    <img src="img/shirt9.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/isko.php" style="text-decoration:none">
+                    <img src="img/<?php echo $row['product_image'] ?>" class="allproducts-thumb" alt="">
+                    <a href="product/lanyard1.php?id=<?php echo $row['product_id']?>" style="text-decoration:none">
                         <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">
-                    <h2 class="allproducts-brand">isko</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
+                    <h2 class="allproducts-brand"><?php echo $row['product_title'] ?></h2>
+                    <p class="allproducts-short-des"><?php echo $row['product_desc'] ?></p>
 
                 </div>
             </div>
-            <!--product2-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
+            <?php }} else { echo "No"; } ?>
 
-                    <img src="img/shirt2.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/cats.php" style="text-decoration:none">
-                        <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Cats of PUPQC</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
 
-                </div>
-            </div>
-
-            <!--product3-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
-
-                    <img src="img/shirt3.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/iskoiska.php" style="text-decoration:none">
-                        <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Isko at Iska</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-
-                </div>
-            </div>
-            <!--product4-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
-                    <img src="img/shirt4.jpg" class="allproducts-thumb" alt="">
-                    <a href="product/mulasayo.php" style="text-decoration:none">
-                        <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Mula Sayo</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-                </div>
-            </div>
-            <!--product5-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
-                    <img src="img/shirt5.jpg" class="allproducts-thumb" alt="">
-                        <a href="product/pupian.php" style="text-decoration:none">
-                        <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">PUPIAN</h2>
-                    <p class="allproducts-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-
-                </div>
-            </div>
-            <!--product6-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
-
-                    <img src="img/lanyard3.png" class="allproducts-thumb" alt="">
-                    <a href="product/lanyard3.php" style="text-decoration:none">
-                        <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">PUP Light of the Nation</h2>
-                    <p class="allproducts-short-des">PUP Likha Lanyard</p>
-
-                </div>
-            </div>
-            <!--product7-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
-                    <img src="img/lanyard2.png" class="allproducts-thumb" alt="">
-                    <a href="product/lanyard2.php" style="text-decoration:none">
-                    <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Country's First</h2>
-                    <p class="allproducts-short-des">PUP Likha Lanyard</p>
-
-                </div>
-            </div>
-            <!--product8-->
-            <div class="allproducts-card">
-                <div class="allproducts-image">
-
-                    <img src="img/lanyard1.png" class="allproducts-thumb" alt="">
-                    <a href="product/lanyard1.php" style="text-decoration:none">
-                    <button class="allproductscard-btn">add to cart</button></a>
-                </div>
-                <div class="allproducts-info">
-                    <h2 class="allproducts-brand">Mula Sayo Para sa Bayan</h2>
-                    <p class="allproducts-short-des">PUP Likha Lanyard</p>
-                </div>
-            </div>
         </div>
     </section>
     </nav>

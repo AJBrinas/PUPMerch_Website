@@ -1,6 +1,8 @@
 <?php
 include '../header.php';
-
+$db = new Database;
+$db->getProducts();
+$result = $db->getResults();
 ?>
 
 <html>
@@ -34,11 +36,18 @@ include '../header.php';
     <section class="selectproduct">
         <h2 class="selectproduct-category">Products</h2>
         <div class="selectproduct-container">
+            <?php 
+                if (!empty($result))
+                {
+                    $count = 0;
+                    foreach($result as $row)
+                    {
+            ?>
         <!--product1-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
-                    <img src="../img/lanyard2.png" class="product-thumb" alt="">
-                    <a href="lanyard2.php" style="text-decoration:none">
+                    <img src="../img/<?php echo $row['product_image'] ?>" class="product-thumb" alt="">
+                    <a href="lanyard1.php" style="text-decoration:none">
                     <button class="card-btn">add to cart</button></a>
                 </div>
                 <div class="selectproduct-info">
@@ -47,6 +56,8 @@ include '../header.php';
                     <span class="selectprice">₱30</span>
                 </div>
             </div>
+            <?php }} else { echo "No"; } ?>
+                
          <!--product2-->
             <div class="selectproduct-card">
                 <div class="selectproduct-image">
