@@ -9,6 +9,7 @@
 	$database->select('products', '*');
 	$result = $database->getResults();
 ?>
+
 <main>
 	<link rel="stylesheet" href="css/products.css">
 	<div class="head-title">
