@@ -1,5 +1,9 @@
 <?php 
     include 'sidebar.php';
+
+    $db = new Database;
+    $db->select('categories', '*');
+    $result = $db->getResults();
 ?>
 
 <main>
@@ -11,7 +15,7 @@
 			</div>
     
     <div>
-    <form action="/action_page.php">
+    <form action="../config/post.php" method="post" enctype="multipart/form-data">
 
     <label for="ProductTitle">Product Title</label>
     <input type="text" id="ProdT" name="ProdTitle" placeholder="Ex: Isko Shirt...">
@@ -19,9 +23,22 @@
     <label for="ProductCategory">Product Category</label>
         <select id="ProdC" name="ProdCategory">
         <option value="" selected disabled>Select Category</option>
-        <option value="1">Shirt</option>
-        <option value="2">Lanyard</option>
-        <option value="3">Tote Bag</option>
+        <?php
+        if (!empty($result))
+						{
+							$count = 0;
+							foreach($result as $row)
+							{ $count++;
+
+						?>
+        <option value="<?php echo $row['cat_id']; ?>"><?php echo $row['cat_title']; ?></option>
+        <?php }} else { ?>
+        <tr>
+            <td>
+                Blank
+            </td>
+        </tr>
+        <?php } ?>
     </select>
 
     <label for="ProductPrice">Product Price</label>
@@ -33,8 +50,13 @@
     <label for="ProductDescription">Product Description</label>
     <textarea id="ProductD" name="ProdDescription" placeholder="Write something.." style="height:200px"></textarea>
 
+    <label>Product Keywords</label>
+    <input type="text" id="product_keywords" name="product_keywords"  required>
+                
     <label for="">Featured Image</label>
         <input type="file" class="product_image" requried name="featured_img">
+
+    <input type="hidden" name="idprod" value="<?php echo $_GET['id'] ?>">
         
     <div>
     <label for="ProductStatus">Status </label>
@@ -45,7 +67,7 @@
     </select>
     </div>
     <div>
-    <input type="submit" value="Submit">
+    <button type="submit" name="editprod">Edit</button>
     </div>
   </form>
 </div>

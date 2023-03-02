@@ -1,5 +1,8 @@
 
     <?php include 'header.php';
+    $database = new Database;
+    $database->limit();
+    $result = $database->getResults();
  ?>
      <link rel="stylesheet" href="css/home.css" />
         <link rel="stylesheet" href="css/style.css">
@@ -21,71 +24,32 @@
             <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
             <div class="product-container">
+                <?php 
+                    if (!empty($result))
+                    {
+                        $count = 0;
+                        foreach($result as $row)
+                        { $count++;
+                ?>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="img/card1.png" class="product-thumb" alt="">
-                        <a href="product/pupqc.php" style="text-decoration:none">
+                        <img src="img/<?php echo $row['product_image']; ?>" class="product-thumb" alt="">
+                        <a href="lanyard1.php?id=<?php echo $row['product_id']; ?>" style="text-decoration:none">
                         <button class="card-btn">add to cart</button></a>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">PUPQC</h2>
-                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-                        <span class="price">$20</span>
+                        <h2 class="product-brand"><?php echo $row['product_title']; ?></h2>
+                        <p class="product-short-des"><?php echo $row['product_desc']; ?></p>
+                        <span class="price"><?php echo $row['product_price']; ?></span>
                     </div>
                 </div>
-        <!--product2-->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/card2.png" class="product-thumb" alt="">
-                        <a href="product/iskolar.php" style="text-decoration:none">
-                        <button class="card-btn">add to cart</button></a>
-                
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Iskolar</h2>
-                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-                        <span class="price">$20</span>
-                    </div>
-                </div>
-            <!--product3-->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/card3.png" class="product-thumb" alt="">
-                        <a href="product/isko.php" style="text-decoration:none">
-                        <button class="card-btn">add to cart</button></a>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Isko</h2>
-                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-                        <span class="price">$20</span>
-                    </div>
-                </div>
-            <!--product4-->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/card4.png" class="product-thumb" alt="">
-                        <a href="product/iskoiska.php" style="text-decoration:none">
-                        <button class="card-btn">add to cart</button></a>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Isko at Iska</h2>
-                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-                        <span class="price">$20</span>
-                    </div>
-                </div>
-            <!--product5-->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/card5.png" class="product-thumb" alt="">
-                        <a href="product/estpup.php" style="text-decoration:none">
-                        <button class="card-btn">add to cart</button></a>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">PUP est 1904</h2>
-                        <p class="product-short-des">Limited Edition Likha Clothing PUPQC Merch</p>
-                        <span class="price">$20</span>
-                    </div>
-                </div>
+                <?php }} else { ?>
+                    <tr>
+						<td>
+							Blank
+						</td>
+					</tr>
+                <?php } ?>
                 </div>
             </section>
         <!--collections-->

@@ -1,4 +1,5 @@
 <?php include 'header.php';
+    // include 'config/config.php';
 
 $db = new Database;
 $db->getProducts();
@@ -30,7 +31,7 @@ $result = $db->getResults();
             <div class="allproducts-card">
                 <div class="allproducts-image">
                     <img src="img/<?php echo $row['product_image'] ?>" class="allproducts-thumb" alt="">
-                    <a href="product/lanyard1.php?id=<?php echo $row['product_id']?>" style="text-decoration:none">
+                    <a href="lanyard1.php?id=<?php echo $row['product_id']?>" style="text-decoration:none">
                         <button class="allproductscard-btn">add to cart</button></a>
                 </div>
                 <div class="allproducts-info">

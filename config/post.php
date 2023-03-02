@@ -1,18 +1,18 @@
 <?php 
 include "config.php";
 
-// Viewing Categories
-if(isset($_POST['p_cat'])){
-    $cat = $_POST['p_cat'];
-    $database = new Database;
-	$database->select('categories', '*');
-    $result = $database->getResults();
+// // Viewing Categories
+// if(isset($_POST['p_cat'])){
+//     $cat = $_POST['p_cat'];
+//     $database = new Database;
+// 	$database->select('categories', '*');
+//     $result = $database->getResults();
 
-    $output = [];
-    if($result>0){
-        $output['$result'] = $result; 
-    }
-}
+//     $output = [];
+//     if($result>0){
+//         $output['$result'] = $result; 
+//     }
+// }
 
 // if(isset($_POST['create'])){
     
@@ -68,7 +68,7 @@ if (isset($_POST['editCategory']))
     header('Location: ../admin/category.php');
 }
 
-// Adding Products
+// add Products
 if (isset($_POST['addprod']))
 {
     $title = $_POST['product_title'];
@@ -82,6 +82,39 @@ if (isset($_POST['addprod']))
     $status = $_POST['product_status'];
 
     $filename_separate = explode('.', $img);
+    // echo $filename_separate[1];
+    $file_ext = strtolower($filename_separate[1]);
+
+    $allowed_ext = array('jpeg', 'png', 'jpg');
+    
+    if (in_array($file_ext, $allowed_ext))
+    {
+        $move_image = '../img/'.$img;
+
+        move_uploaded_file($tmp_img, $move_image);
+        $db = new Database;
+        $db->addProduct($catID, $title, $price, $desc, $img, $qty, $key, $status);
+        header('Location: ../admin/products.php?Success');
+    }
+
+
+}
+
+// edit Products
+if (isset($_POST['editprod']))
+{
+    $id = $_POST['idprod'];
+    $title = $_POST['ProdTitle'];
+    $catID = $_POST['ProdCategory'];
+    $price = $_POST['ProdPrice'];
+    $qty = $_POST['ProdQuantity'];
+    $desc = $_POST['ProdDescription'];
+    $key = $_POST['product_keywords'];
+    $img = $_FILES['featured_img']['name'];
+    $tmp_img = $_FILES['featured_img']['tmp_name'];
+    $status = $_POST['product_status'];
+
+    $filename_separate = explode('.', $img);
     echo $filename_separate[1];
     $file_ext = strtolower($filename_separate[1]);
 
@@ -89,11 +122,11 @@ if (isset($_POST['addprod']))
     
     if (in_array($file_ext, $allowed_ext))
     {
-        $move_image = '../admin/img/'.$img;
+        $move_image = '../img/'.$img;
 
         move_uploaded_file($tmp_img, $move_image);
         $db = new Database;
-        $db->addProduct($catID, $title, $price, $desc, $img, $qty, $key, $status);
+        $db->editprod($catID, $title, $price, $desc, $img, $qty, $key, $status, $id);
         header('Location: ../admin/products.php?Success');
     }
 
@@ -128,38 +161,38 @@ if (isset($_POST['login']))
             header('Location: ../home.php');
 }
 
-if (isset($_POST['editproduct']))
-{
-    $id = $_POST['id'];
-    echo $id;
-    $title = $_POST['ProdTitle'];
-    echo $title;
-    $catID = $_POST['ProdCategory'];
-    $price = $_POST['ProdPrice'];
-    $qty = $_POST['ProdQuantity'];
-    $desc = $_POST['ProdDescription'];
-    //$key = $_GET['product_keywords'];
-    //ALTER KEYWORD
-    $img = $_FILES['featured_img']['name'];
-    $tmp_img = $_FILES['featured_img']['tmp_name'];
-    $status = $_POST['product_status'];
+// if (isset($_POST['editproduct']))
+// {
+//     $id = $_POST['id'];
+//     echo $id;
+//     $title = $_POST['ProdTitle'];
+//     echo $title;
+//     $catID = $_POST['ProdCategory'];
+//     $price = $_POST['ProdPrice'];
+//     $qty = $_POST['ProdQuantity'];
+//     $desc = $_POST['ProdDescription'];
+//     //$key = $_GET['product_keywords'];
+//     //ALTER KEYWORD
+//     $img = $_FILES['featured_img']['name'];
+//     $tmp_img = $_FILES['featured_img']['tmp_name'];
+//     $status = $_POST['product_status'];
 
-    $db = new Database;
-    $db->editprod($catID, $title, $price, $desc, $img, $qty, $status);
+//     $db = new Database;
+//     $db->editprod($catID, $title, $price, $desc, $img, $qty, $key, $status, $id);
 
-    //$db->editprod($catID, $title, $price, $desc, $img, $qty, $status);
-    //new database, query muna pasa id=, function to call certain getting the id then fetch assoc, result
-    $move_image = '../admin/img/'.$img;
-    $allowed_ext = array('jpeg', 'png', 'jpg');
-    unlink($move_image.$id['product_image']);
-    move_uploaded_file($tmp_img, $move_image);
-    $filename_separate = explode('.', $img);
-    echo $filename_separate[1];
-    $file_ext = strtolower($filename_separate[1]);
+//     //$db->editprod($catID, $title, $price, $desc, $img, $qty, $status);
+//     //new database, query muna pasa id=, function to call certain getting the id then fetch assoc, result
+//     $move_image = '../admin/img/'.$img;
+//     $allowed_ext = array('jpeg', 'png', 'jpg');
+//     unlink($move_image.$id['product_image']);
+//     move_uploaded_file($tmp_img, $move_image);
+//     $filename_separate = explode('.', $img);
+//     echo $filename_separate[1];
+//     $file_ext = strtolower($filename_separate[1]);
 
-        $sql=$conn->prepare('UPDATE dbo.products SET ProdT=title,ProdC=catID, ProdP=price, ProductD=desc, featured_img=img, ProdQ=qty, product_status=status');
-       // header('Location: ../admin/products.php?Success');
+//         $sql=$conn->prepare('UPDATE dbo.products SET ProdT=title,ProdC=catID, ProdP=price, ProductD=desc, featured_img=img, ProdQ=qty, product_status=status');
+//        // header('Location: ../admin/products.php?Success');
     
-}
+// }
 
 ?>

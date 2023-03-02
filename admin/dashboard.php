@@ -1,10 +1,11 @@
 <?php
-    include 'sidebar.php'
+    include 'sidebar.php';
+
+	$database = new Database;
+	$database->select('products', '*');
+	$result = $database->getResults();
+
 ?>
-
-
-
-
 
 		<!-- MAIN -->
 		<main>
@@ -23,7 +24,7 @@
 				</div>
 			</div>
 
-			<ul class="box-info">
+			<ul class="box-info"> 
 				<li>
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
@@ -83,42 +84,54 @@
 								<td>01-10-2021</td>
 								<td><span class="status pending">Pending</span></td>
 							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Mejela Gojol</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status process">Process</span></td>
-							</tr>
-							<tr>
 
-								
-								<!-- <td>
-									<img src="img/people.png">
-									<p>Janna Manuela</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Janna Manuela</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-							 -->
 						</tbody>
 					</table>
 				</div>
 				<div class="todo">
 					<div class="head">
-						<h3>Products</h3>
+					<h3>Products</h3>
+					</div>
+					<table style="width:100%">
+						<thead>
+							<tr>
+								<th>Product Name</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						
+						<?php 
+							$database = new Database;
+							$database->select('products', '*');
+							$result = $database->getResults();
+
+							if (!empty($result))
+						{
+							$count = 0;
+							foreach($result as $row)
+							{ $count++;
+
+						?>
 						<!-- <i class='bx bx-plus' ></i>
 						<i class='bx bx-filter' ></i> -->
-					</div>
+						<tbody>
+						<tr>
+							<td>
+							<p><?php echo $row['product_title'] ?></p>
+							</td>
+							<!-- <td>01-10-2021</td> -->
+							<td><span class="status pending"><?php echo $row['product_qty'] ?></span></td>
+						</tr>
+						</tbody>
+						<?php }} else { ?>
+							<tr>
+						<td>
+							Blank
+						</td>
+					</tr>
+					<?php } ?>
+					</table>
+					
 				</div>
 			</div>
 		</main>

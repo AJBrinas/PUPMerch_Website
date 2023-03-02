@@ -79,15 +79,16 @@ class Database
     }
 
     // Getting Certain Products
-    public function getOneProduct()
+    public function getOneProduct($id)
     {
         $database = new Database;
         $db = $database->connections();
-        $sql = "";
+        $sql = "one_product @product_id = $id";
         $query = $db->query($sql);
         $this->result = $query->fetch(PDO::FETCH_ASSOC);
     }
 
+    
     // Adding Categories
     public function addCategory($categoryName)
     {
@@ -114,13 +115,15 @@ class Database
     // Deleting for all
     public function delete($table, $id)
     {
-        $database = new Database;
+        $database = new Database; 
         $db = $database->connections();
         $sql = "DELETE FROM $table
                 WHERE  cat_id=$id";
         $query = $db->prepare($sql);
         $query->execute([$id]);
     }
+
+
     public function deleteproducts($table, $id)
     {
         $database = new Database;
@@ -148,9 +151,9 @@ class Database
     {
         $database = new Database;
         $db = $database->connections();
-        $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, 
+        $sql = "INSERT INTO customer (cust_fname, cust_lname, 
         cust_uname, cust_email, cust_pass, cust_mobile, cust_address,cust_city) VALUES
-        (2,?,?,?,?,?,?,?,?)";
+        (?,?,?,?,?,?,?,?)";
         $params = array($fname, $lname, $username, $email, $password, $phone, $address, $city);
         $query = $db->prepare($sql);
         $run = $query->execute($params);
@@ -166,35 +169,54 @@ class Database
         $run = $query->execute($params);
     }
 
-    public function editprod($catID, $title, $price, $desc, $img, $qty, $status){
+    public function editprod($catID, $title, $price, $desc, $img, $qty, $key, $status, $id){
     $database = new Database;
     $db = $database->connections();
     $sql = "UPDATE products
-            SET cat_id = ?, product_title =?, product_price=?, product_desc=?, product_image=?, product_qty=?, product_status=?
+            SET product_cat = ?, product_title =?, product_price=?, product_desc=?, product_image=?, product_qty=?, product_keywords=?, product_status=?
             WHERE product_id = ?";
-    $param = array(&$catID, &$title, &$price, &$desc, &$img, &$qty, &$status);
+    $param = array(&$catID, &$title, &$price, &$desc, &$img, &$qty, &$key, &$status, &$id);
     $query = $db->prepare($sql);
-    $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
+    $run = $query->execute($param);
     }
 
 
 
-    public function editProduct($cat_id, $title, $price, $desc, $img, $qty, $key, $status, $id)
+    // public function editProduct($cat_id, $title, $price, $desc, $img, $qty, $key, $status, $id)
+    // {
+    //     $database = new Database;
+    //     $db = $database->connections();
+    //     $sql = "UPDATE products SET 
+    //             product_cat = ?
+    //             ,product_title = ?
+    //             ,product_price = ?
+    //             ,product_desc = ?
+    //             ,product_image = ?
+    //             ,product_qty = ?
+    //             ,product_keywords = ?
+    //             ,product_status = ?
+    //             WHERE product_id = ?";
+    //     $params = array(&$cat_id, &$title, &$price, &$desc, &$img, &$qty, &$key, &$status, &$id);
+    // }
+
+    public function limit()
     {
         $database = new Database;
         $db = $database->connections();
-        $sql = "UPDATE products SET 
-                product_cat = ?
-                ,product_title = ?
-                ,product_price = ?
-                ,product_desc = ?
-                ,product_image = ?
-                ,product_qty = ?
-                ,product_keywords = ?
-                ,product_status = ?
-                WHERE product_id = ?";
-        $params = array(&$cat_id, &$title, &$price, &$desc, &$img, &$qty, &$key, &$status, &$id);
+        $sql = "first_fiveProducts";
+
+        $query = $db->query($sql);
+        $this->result = $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    // public function check_admin()
+    // {
+    //     $database = new Database;
+    //     $db = $database->connections();
+
+    //     $sql = "";
+    //     $query = $db->prepare()
+    //     $run = $query->execute()''
+    // }
 }
 ?>

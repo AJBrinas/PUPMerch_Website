@@ -1,4 +1,6 @@
-<?php include 'config/config.php' ?>
+<?php 
+    include 'config/config.php';
+?>
 <html>
 <head>
     <title>PUPQC MERCH</title>

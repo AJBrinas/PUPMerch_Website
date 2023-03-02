@@ -60,7 +60,7 @@
 					?>
 						<td><p><?php echo $count; ?></p></td>
 						<td></td>
-						<td><img src="img/<?php echo $row['product_image'];?>" alt="" width="10" height="10"></td>
+						<td><img src="../img/<?php echo $row['product_image'];?>" alt="" width="10" height="10"></td>
 						<td></td>
 						<td><p><?php echo $row['product_title']; ?> </p></td>
 						<td></td>
@@ -68,7 +68,7 @@
 						<td></td>
 						<td><p><?php echo $row['product_qty']; ?></p></td>
 						<td></td>
-						<td><a href="editcategory.php"><span class="status edit">Edit</span></a></td>
+						<td><a href="editproducts.php?id=<?php echo $row['product_id']; ?>"><span class="status edit">Edit</span></a></td>
 						<td><span class="status delete">
 							<a href="../config/deleteprod.php?action_type=delete&id=<?php echo $row['product_id'], '&name=products';?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
 						</span></td>

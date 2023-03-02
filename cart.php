@@ -22,32 +22,32 @@
   </thead>
   <tbody>
     <tr>
-      <td><img src="img/shirt4s.jpg" alt="#"></td>
-      <td>name</td>
-      <td>price</td>
-      <td><input type="number" value="1" min="1"></td>
-      <td>price</td>
-      <td><button class="remove-button">Remove</button></td>
-    </tr>
-    <tr>
-      <td><img src="img/shirt2.jpg" alt="#"></td>
-      <td>name</td>
-      <td>price</td>
+      <td><img src="img/shirt4.jpg" alt="#"></td>
+      <td>Mula Sayo, Para sa Bayan</td>
+      <td>$350</td>
       <td><input type="number" value="2" min="1"></td>
-      <td>price</td>
+      <td>$700</td>
       <td><button class="remove-button">Remove</button></td>
     </tr>
     <tr>
       <td><img src="img/shirt3.jpg" alt="#"></td>
-      <td>name</td>
-      <td>price</td>
-      <td><input type="number" value="3" min="1"></td>
-      <td>price</td>
+      <td>Isko, Iska</td>
+      <td>$350</td>
+      <td><input type="number" value="2" min="1"></td>
+      <td>$700</td>
+      <td><button class="remove-button">Remove</button></td>
+    </tr>
+    <tr>
+      <td><img src="img/shirt2.jpg" alt="#"></td>
+      <td>Cats PUPQC</td>
+      <td>$120</td>
+      <td><input type="number" value="1" min="1"></td>
+      <td>$120</td>
       <td><button class="remove-button">Remove</button></td>
     </tr>
     <tr>
       <td colspan="4"><b>Total Amount</b></td>
-      <td><b>price</b></td>
+      <td><b>$7000</b></td>
       <td></td>
     </tr>
   </tbody>

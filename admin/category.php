@@ -56,7 +56,7 @@
 						<td></td>
 						<td><a href="editcategory.php?id=<?php echo $row['cat_id'] ?>"><span class="status edit">Edit</span></td>
 						<td><span class="status delete">
-						<a href="delete.php?action_type=delete&id=<?php echo $row['cat_id'];?>" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
+						<a href="../config/delete.php?action_type=delete&id=<?php echo $row['cat_id'];?>&name=categories" onclick="return confirm('Are you sure to delete this member?')">Delete</a>
 						</span></td>
 					</tr>
 					<?php }} else { ?>
