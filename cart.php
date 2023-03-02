@@ -39,11 +39,7 @@
     </tr>
     <tr>
       <td><img src="img/shirt2.jpg" alt="#"></td>
-<<<<<<< HEAD
-      <td>Cats PUPQC</td>
-=======
       <td>Cat PUPQC</td>
->>>>>>> 812bd6c086c09def5cd4f1912b3cb01ce8bea6ee
       <td>$120</td>
       <td><input type="number" value="1" min="1"></td>
       <td>$120</td>
