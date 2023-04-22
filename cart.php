@@ -39,7 +39,7 @@
     </tr>
     <tr>
       <td><img src="img/shirt2.jpg" alt="#"></td>
-      <td>Cat PUPQC</td>
+      <td>Cats PUPQC</td>
       <td>$120</td>
       <td><input type="number" value="1" min="1"></td>
       <td>$120</td>
